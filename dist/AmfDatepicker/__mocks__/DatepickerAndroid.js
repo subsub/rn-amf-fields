@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.open=open;var dismissedAction=exports.dismissedAction='DISMISSED_ACTION';function open(options){return new Promise(function(resolve,reject){resolve({action:dismissedAction,year:2017,month:7,day:7});});}

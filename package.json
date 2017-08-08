@@ -1,0 +1,69 @@
+{
+  "name": "rn-amf-fields",
+  "version": "1.0.0",
+  "description": "Fields that use in react-native with standared styles",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist --ignore src/**/*.test.js",
+    "test": "jest",
+    "eslint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amarthaid/rn-amf-fields.git"
+  },
+  "keywords": [
+    "textinput",
+    "datepicker",
+    "numberinput"
+  ],
+  "author": "Habib Ridho <habib.ridho@amartha.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amarthaid/rn-amf-fields/issues"
+  },
+  "homepage": "https://github.com/Amarthaid/rn-amf-fields#readme",
+  "peerDependencies": {
+    "d3-scale-chromatic": "^1.1.1",
+    "prop-types": "15.5.10",
+    "moment": "^2.18.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.2",
+    "react-native-camera-kit": "5.3.6",
+    "react-native-masked-text": "^1.5.3",
+    "react-native-modal-dropdown": "0.4.4",
+    "react-native-simple-radio-button": "2.6.0",
+    "react-native-vector-icons": "4.3.0",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "d3-scale-chromatic": "^1.1.1",
+    "eslint": "^4.4.1",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "jest": "20.0.4",
+    "prop-types": "15.5.10",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.2",
+    "react-native-camera-kit": "5.3.6",
+    "react-native-masked-text": "^1.5.3",
+    "react-native-modal-dropdown": "0.4.4",
+    "react-native-simple-radio-button": "2.6.0",
+    "react-native-vector-icons": "4.3.0",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "babel": {
+    "presets": [
+      "react-native"
+    ]
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3"
+  }
+}

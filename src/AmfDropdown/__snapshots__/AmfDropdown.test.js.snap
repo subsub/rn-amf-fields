@@ -1,0 +1,1304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AmfDropdown with custom selector 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+        >
+          Custom Selector
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with empty validation object 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with empty value 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {
+            "borderColor": "red",
+            "borderWidth": 1,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "red",
+        "margin": 4,
+        "marginBottom": 0,
+      }
+    }
+  >
+    undefined harus dipilih
+  </Text>
+</View>
+`;
+
+exports[`AmfDropdown with horizontal layout 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with label 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#454545",
+            "marginRight": 16,
+          },
+          Object {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with label 2`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#454545",
+            "marginRight": 16,
+          },
+          Object {
+            "marginBottom": 0,
+          },
+        ]
+      }
+    >
+      Label
+    </Text>
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with required validation 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with required validation 2`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            foo
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown with unmatch value 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            No Match
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`AmfDropdown without validation 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <View
+      animated={true}
+      defaultIndex={-1}
+      defaultValue="Please select..."
+      disabled={false}
+      dropdownStyle={
+        Array [
+          Object {
+            "elevation": 4,
+            "height": 150,
+            "padding": 8,
+            "width": 100,
+          },
+          undefined,
+        ]
+      }
+      keyboardShouldPersistTaps="never"
+      onDropdownWillHide={[Function]}
+      onDropdownWillShow={[Function]}
+      onSelect={[Function]}
+      options={
+        Array [
+          "foo",
+          "bar",
+        ]
+      }
+      showsVerticalScrollIndicator={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "transparent",
+            "borderRadius": 25,
+            "borderWidth": 1,
+            "elevation": 4,
+            "justifyContent": "center",
+          },
+          undefined,
+          Object {},
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": 30,
+                "justifyContent": "space-between",
+              },
+              undefined,
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginLeft": 16,
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            disabled={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 16,
+                },
+                Object {
+                  "marginRight": 16,
+                },
+                Object {
+                  "fontFamily": "Material Icons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
