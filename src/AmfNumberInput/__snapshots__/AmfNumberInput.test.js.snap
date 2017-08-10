@@ -69,13 +69,7 @@ exports[`AmfNumberInput without validation 1`] = `
           onChangeText={[Function]}
           onContentSizeChange={[Function]}
           onFocus={[Function]}
-          options={
-            Object {
-              "delimiter": ",",
-              "precision": 0,
-              "separator": ".",
-            }
-          }
+          options={undefined}
           returnKeyType="next"
           selectionColor="rgb(0, 145, 234)"
           style={

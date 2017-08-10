@@ -2,6 +2,19 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, TextInput, Text, View } from 'react-native'
 import { TextField } from 'react-native-material-textfield';
+import numeral from 'numeral'
+
+/**
+ * sorry fo the hardcode
+ *
+ */
+numeral.register('locale', 'id', {
+  delimiters: { thousands : '.', decimal : ',' },
+  abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
+  ordinal : i => '',
+  currency: { symbol: 'Rp' }
+})
+numeral.locale('id')
 
 class AmfNumberInput extends Component {
   constructor(props) {
@@ -45,32 +58,31 @@ class AmfNumberInput extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
+  onChangeText = val => onChange(numeral(val).value)
+
   render() {
     let textInputValidationStyle = {}
     let validationText
 
-		const { label, onChange, value } = this.props;
-    
+    const { label, value } = this.props;
+
     if (!this.state.valid) {
       textInputValidationStyle = { borderColor: 'red' }
       validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
     }
 
+    let shownValue = value == '' ? '' : numeral(value).format()
+
     return (
       <View>
-				<TextField
-					label={label}
-					onChangeText={onChange}
-					keyboardType="numeric"
-			    returnKeyType="next"
-			    options={{
-						delimiter: ",",
-						precision: 0,
-						separator: "."
-					}}
-					value={value || '0'}
-				/>
-        { validationText }
+      <TextField
+        label={label}
+        onChangeText={this.onChangeText}
+        keyboardType="numeric"
+        returnKeyType="next"
+        value={shownValue}
+      />
+      { validationText }
       </View>
     )
   }
@@ -106,7 +118,7 @@ AmfNumberInput.defaultProps = {
 AmfNumberInput.propTypes = {
   delimiter: PropTypes.string,
   label: PropTypes.string.isRequired,
-  onChangeValue: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   precision: PropTypes.number,
   pristineValue: PropTypes.number,
   separator: PropTypes.string,
