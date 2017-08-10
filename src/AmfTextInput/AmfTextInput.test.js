@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer'
 test('AmfInputText without validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null
   }
 
@@ -18,7 +18,7 @@ test('AmfInputText without validation', () => {
 test('AmfInputText with required validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null,
     validation: {
       required: true
@@ -40,7 +40,7 @@ test('AmfInputText with required validation', () => {
 test('AmfInputText with regex validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null,
     validation: {
       regex: /e/
@@ -48,7 +48,7 @@ test('AmfInputText with regex validation', () => {
   }
   let propsNotNull = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: '',
     validation: {
       regex: /e/
@@ -56,7 +56,7 @@ test('AmfInputText with regex validation', () => {
   }
   let propsRight = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: 'test',
     validation: {
       regex: /e/
@@ -64,7 +64,7 @@ test('AmfInputText with regex validation', () => {
   }
   let propsWrong = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: 'ups',
     validation: {
       regex: /e/
@@ -89,7 +89,7 @@ test('AmfInputText with regex validation', () => {
 test('AmfInputText with minLength validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null,
     validation: {
       minLength: 2
@@ -111,7 +111,7 @@ test('AmfInputText with minLength validation', () => {
 test('AmfInputText with exactLength validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null,
     validation: {
       exactLength: 2
@@ -136,7 +136,7 @@ test('AmfInputText with exactLength validation', () => {
 test('AmfInputText with maxLength validation', () => {
   let props = {
     label: 'Label',
-    onChangeText: () => {},
+    onChange: () => {},
     value: null,
     validation: {
       maxLength: 2
@@ -161,7 +161,7 @@ test('AmfInputText with maxLength validation', () => {
 test('AmfInputText onFocus', () => {
   let props = {
     label: 'Label',
-    onChangeText: jest.fn(),
+    onChange: jest.fn(),
     value: 'test',
     validation: {
       required: true
@@ -169,7 +169,7 @@ test('AmfInputText onFocus', () => {
   }
   let propsPristine = {
     label: 'Label',
-    onChangeText: jest.fn(),
+    onChange: jest.fn(),
     value: null,
     validation: {
       required: true
@@ -177,7 +177,7 @@ test('AmfInputText onFocus', () => {
   }
   let propsNull = {
     label: 'Label',
-    onChangeText: jest.fn(),
+    onChange: jest.fn(),
     value: null
   }
 
@@ -190,9 +190,9 @@ test('AmfInputText onFocus', () => {
   componentPristine.onFocus()
   componentWithoutValidation.onFocus()
 
-  expect(props.onChangeText).not.toHaveBeenCalled()
-  expect(propsPristine.onChangeText).toHaveBeenCalled()
-  expect(propsNull.onChangeText).not.toHaveBeenCalled()
+  expect(props.onChange).not.toHaveBeenCalled()
+  expect(propsPristine.onChange).toHaveBeenCalled()
+  expect(propsNull.onChange).not.toHaveBeenCalled()
 })
 
 test('AmfInputText onBlur', () => {

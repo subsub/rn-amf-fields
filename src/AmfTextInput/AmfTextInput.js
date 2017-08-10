@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import fieldPropTypes from '../fieldPropTypes'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { TextField } from 'react-native-material-textfield';
 
 class AmfTextInput extends Component {
   constructor(props) {
@@ -21,39 +23,39 @@ class AmfTextInput extends Component {
   }
 
   onFocus = () => {
-    if (this.props.validation && this.props.validation.required && this.props.value === null) this.props.onChangeText('')
+    if (this.props.validation && this.props.validation.required && this.props.value === null) this.props.onChange('')
   }
 
   inputValid = () => {
-    const { validation, label } = this.props
+    const { validation, label, value } = this.props
     if (!validation) return ({status: true})
 
     // check if pristine
-    if (this.props.value === null || this.props.value === undefined) return ({status: true})
+    if (value === null || value === undefined) return ({status: true})
 
     // check whether input is required
     if (validation.required) {
-      if (this.props.value === '') return ({status: false, message: label + ' tidak boleh kosong'})
+      if (value === '') return ({status: false, message: label + ' tidak boleh kosong'})
     }
 
     // check regex
-    if (validation.regex && this.props.value !== '') {
-      if (!validation.regex.test(this.props.value)) return ({status: false, message: 'Format tidak sesuai'})
+    if (validation.regex && value !== '') {
+      if (!validation.regex.test(value)) return ({status: false, message: 'Format tidak sesuai'})
     }
 
     // check whether input needs exact length
     if (validation.exactLength) {
-      if (this.props.value.length !== parseInt(validation.exactLength)) return ({status: false, message: label + ' harus ' + validation.exactLength + ' karakter'})
+      if (value.length !== parseInt(validation.exactLength)) return ({status: false, message: label + ' harus ' + validation.exactLength + ' karakter'})
     }
 
     // check whether input needs minimum length
     if (validation.minLength) {
-      if (this.props.value.length < parseInt(validation.minLength)) return ({status: false, message: label + ' minimal ' + validation.minLength + ' karakter'})
+      if (value.length < parseInt(validation.minLength)) return ({status: false, message: label + ' minimal ' + validation.minLength + ' karakter'})
     }
 
     // check whether input needs maximum length
     if (validation.maxLength) {
-      if (this.props.value.length > parseInt(validation.maxLength)) return ({status: false, message: label + ' maksimum ' + validation.minLength + ' karakter'})
+      if (value.length > parseInt(validation.maxLength)) return ({status: false, message: label + ' maksimum ' + validation.minLength + ' karakter'})
     }
 
     return ({status: true})
@@ -67,6 +69,8 @@ class AmfTextInput extends Component {
   render() {
     let textInputValidationStyle = {}
     let validationText
+
+		const { label, onChange, value } = this.props;
     
     if (!this.state.valid) {
       textInputValidationStyle = { borderColor: 'red' }
@@ -75,16 +79,12 @@ class AmfTextInput extends Component {
 
     return (
       <View>
-        <Text style={style.label}>{this.props.label}</Text>
-        <TextInput
-          ref={(ref) => {this.textInput = ref}}
-          {...this.props}
-          onFocus={this.onFocus}
-          onBlur={this.onBlur}
-          underlineColorAndroid='transparent'
-          style={[style.textInput, this.props.style, textInputValidationStyle]}
-        />
-        { validationText }
+				<TextField
+					label={label}
+					onChangeText={onChange}
+					value={value || ""}
+				/>
+			  { validationText }
       </View>
     )
   }
@@ -113,12 +113,6 @@ const style = StyleSheet.create({
   }
 })
 
-AmfTextInput.propTypes = {
-  label: PropTypes.string.isRequired,
-  onChangeText: PropTypes.func.isRequired,
-  style: TextInput.propTypes.style,
-  validation: PropTypes.object,
-  value: PropTypes.string
-}
+AmfTextInput.propTypes = fieldPropTypes;
 
 export default AmfTextInput
