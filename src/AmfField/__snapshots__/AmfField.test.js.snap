@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AmfField with wrong type 1`] = `"Unknown type Field \\"zzzzzzzzzzzzzzzzzzzzzzzz\\" in AmfField"`;
+
 exports[`AmfField without validation 1`] = `
 <View>
   <View

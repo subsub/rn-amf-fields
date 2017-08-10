@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import AmfTextInput from '../AmfTextInput/AmfTextInput'
+import AmfNumberInput from '../AmfNumberInput/AmfNumberInput'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
 const switcher = {
 	'text': AmfTextInput,
+	'number': AmfNumberInput
 }
 
 class AmfField extends Component {
@@ -15,12 +17,11 @@ class AmfField extends Component {
 
 	render() {
 		const { type, label, onChange, value, list  } = this.props;
-		console.log(onChange)
 		if (type in switcher) {
 			const Component = switcher[type];
 			return <Component type={type} label={label} onChange={onChange} value={value}  />
 		} else {
-			throw new Error ('Unknown type Field "' + type + '" in AmfField');
+			throw new TypeError ('Unknown type Field "' + type + '" in AmfField');
 		}
 	}
 }
