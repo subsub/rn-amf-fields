@@ -6,80 +6,36 @@ exports[`AmfDropdown with custom selector 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          disabled={false}
-          ellipsizeMode="tail"
-        >
-          Custom Selector
-        </Text>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -91,123 +47,36 @@ exports[`AmfDropdown with empty validation object 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -219,126 +88,36 @@ exports[`AmfDropdown with empty value 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {
-            "borderColor": "red",
-            "borderWidth": 1,
-          },
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
   <Text
@@ -370,123 +149,36 @@ exports[`AmfDropdown with horizontal layout 1`] = `
     }
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -517,123 +209,36 @@ exports[`AmfDropdown with label 1`] = `
       Label
     </Text>
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -669,123 +274,36 @@ exports[`AmfDropdown with label 2`] = `
       Label
     </Text>
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -797,123 +315,36 @@ exports[`AmfDropdown with required validation 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -925,123 +356,36 @@ exports[`AmfDropdown with required validation 2`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            foo
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -1053,123 +397,36 @@ exports[`AmfDropdown with unmatch value 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            No Match
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -1181,123 +438,36 @@ exports[`AmfDropdown without validation 1`] = `
     style={Object {}}
   >
     <View
-      animated={true}
-      defaultIndex={-1}
-      defaultValue="Please select..."
-      disabled={false}
-      dropdownStyle={
-        Array [
-          Object {
-            "elevation": 4,
-            "height": 150,
-            "padding": 8,
-            "width": 100,
-          },
-          undefined,
-        ]
-      }
-      keyboardShouldPersistTaps="never"
-      onDropdownWillHide={[Function]}
-      onDropdownWillShow={[Function]}
-      onSelect={[Function]}
-      options={
-        Array [
-          "foo",
-          "bar",
-        ]
-      }
-      showsVerticalScrollIndicator={true}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "white",
-            "borderColor": "transparent",
-            "borderRadius": 25,
-            "borderWidth": 1,
-            "elevation": 4,
-            "justifyContent": "center",
-          },
-          undefined,
-          Object {},
-        ]
-      }
+      style={undefined}
     >
-      <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
-        accessible={true}
-        collapsable={undefined}
-        hitSlop={undefined}
-        isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "foo",
+              "textColor": undefined,
+              "value": "foo",
+            },
+            Object {
+              "label": "bar",
+              "textColor": undefined,
+              "value": "bar",
+            },
+          ]
+        }
+        onChange={[Function]}
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "flexDirection": "row",
-                "height": 30,
-                "justifyContent": "space-between",
-              },
-              undefined,
-            ]
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "marginLeft": 16,
-              }
-            }
-          >
-            
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            disabled={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 16,
-                },
-                Object {
-                  "marginRight": 16,
-                },
-                Object {
-                  "fontFamily": "Material Icons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>

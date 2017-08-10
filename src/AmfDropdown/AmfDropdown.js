@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyleSheet, Text, View } from 'react-native'
-import ModalDropdown from 'react-native-modal-dropdown'
+import { StyleSheet, Text, View, Picker } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
 class AmfDropdown extends Component {
@@ -13,15 +12,10 @@ class AmfDropdown extends Component {
       isFocused: false
     }
 
-    this.item = this.props.item.map((item) => item.label)
   }
 
   componentDidMount() {
     this.validate()
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.item = nextProps.item.map((item) => item.label)
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -65,7 +59,7 @@ class AmfDropdown extends Component {
   }
 
   onSelect = (idx, value) => {
-    this.props.onSelect(this.props.item[idx].value)
+    this.props.onChange(this.props.item[idx].value)
   }
 
   validate = () => {
@@ -85,7 +79,7 @@ class AmfDropdown extends Component {
   }
 
   render() {
-    const { layout } = this.props
+    const { layout, value } = this.props
 
     let validationStyle = {}
     let validationText
@@ -104,16 +98,9 @@ class AmfDropdown extends Component {
       <View>
         <View style={ layout === 'horizontal' ? style.containerHorizontal : style.container }>
           { labelText }
-          <ModalDropdown
-            disabled={this.props.disabled}
-            style={[style.dropdownContainer, this.props.style, validationStyle]}
-            dropdownStyle={[style.dropdown, this.props.dropdownStyle]}
-            options={this.item}
-            onSelect={this.onSelect}
-            onDropdownWillShow={this.onDropdownWillShow}
-            onDropdownWillHide={this.onDropdownWillHide}>
-            { this.renderSelector() }
-          </ModalDropdown>
+            <Picker selectedValue={value} onValueChange={this.onSelect} >
+              { this.props.list.map(item => <Picker.Item {...item} />) }
+            </Picker>
         </View>
         { validationText }
       </View>
@@ -176,10 +163,10 @@ AmfDropdown.defaultProps = {
 AmfDropdown.propTypes = {
   disabled: PropTypes.bool,
   dropdownStyle: PropTypes.object,
-  item: PropTypes.arrayOf(itemShape).isRequired,
+  list: PropTypes.arrayOf(itemShape).isRequired,
   label: PropTypes.string,
   layout: PropTypes.oneOf(['vertical', 'horizontal']),
-  onSelect: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
   optionStyle: PropTypes.object,
   selector: PropTypes.element,
   style: PropTypes.object,

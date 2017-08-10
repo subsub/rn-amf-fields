@@ -3,20 +3,20 @@ import { Text } from 'react-native'
 import AmfDropdown from './AmfDropdown'
 import renderer from 'react-test-renderer'
 
-let item = [{
+let list = [{
   label: 'foo',
   value: 'foo'
 }, {
   label: 'bar',
   value: 'bar'
 }]
-let onSelect = jest.fn()
+let onChange = jest.fn()
 let validation = {
   required: true
 }
 
 test('AmfDropdown without validation', () => {
-  let props = { item, onSelect }
+  let props = { list, onChange }
 
   const component = renderer.create(<AmfDropdown {...props} />)
   
@@ -25,7 +25,7 @@ test('AmfDropdown without validation', () => {
 })
 
 test('AmfDropdown with label', () => {
-  let props = { item, onSelect, label: 'Label' }
+  let props = { list, onChange, label: 'Label' }
   let propsHorizontal = { ...props, layout: 'horizontal' }
 
   const component = renderer.create(<AmfDropdown {...props} />)
@@ -39,7 +39,7 @@ test('AmfDropdown with label', () => {
 
 test('AmfDropdown with custom selector', () => {
   let props = {
-    item, onSelect,
+    list, onChange,
     selector: <Text>Custom Selector</Text>
   }
 
@@ -51,7 +51,7 @@ test('AmfDropdown with custom selector', () => {
 
 test('AmfDropdown with horizontal layout', () => {
   let props = {
-    item, onSelect,
+    list, onChange,
     layout: 'horizontal'
   }
 
@@ -63,7 +63,7 @@ test('AmfDropdown with horizontal layout', () => {
 
 test('AmfDropdown with required validation', () => {
   let props = {
-    item, onSelect, validation
+    list, onChange, validation
   }
   let propsWithValue = {
     ...props, value: 'foo'
@@ -80,7 +80,7 @@ test('AmfDropdown with required validation', () => {
 
 test('AmfDropdown with unmatch value', () => {
   let props = {
-    item, onSelect, validation,
+    list, onChange, validation,
     value: 'No Match'
   }
 
@@ -92,7 +92,7 @@ test('AmfDropdown with unmatch value', () => {
 
 test('AmfDropdown with empty value', () => {
   let props = {
-    item, onSelect, validation,
+    list, onChange, validation,
     value: ''
   }
 
@@ -104,7 +104,7 @@ test('AmfDropdown with empty value', () => {
 
 test('AmfDropdown with empty validation object', () => {
   let props = {
-    item, onSelect,
+    list, onChange,
     validation: {}
   }
 
@@ -114,20 +114,20 @@ test('AmfDropdown with empty validation object', () => {
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown test onSelect function', () => {
+test('AmfDropdown test onChange function', () => {
   let props = {
-    item, onSelect
+    list, onChange
   }
 
   const component = new AmfDropdown(props)
-  component.onSelect(0, 'value')
+  component.onChange(0, 'value')
   
-  expect(props.onSelect).toHaveBeenCalled()
+  expect(props.onChange).toHaveBeenCalled()
 })
 
 test('AmfDropdown, test willHide event', () => {
   let props = {
-    item, onSelect
+    list, onChange
   }
 
   const component = new AmfDropdown(props)
@@ -139,7 +139,7 @@ test('AmfDropdown, test willHide event', () => {
 
 test('AmfDropdown, test willShow event', () => {
   let props = {
-    item, onSelect
+    list, onChange
   }
   let propsWithValidation = {
     ...props, validation, value: null
@@ -154,12 +154,12 @@ test('AmfDropdown, test willShow event', () => {
   componentWithValidation.onDropdownWillShow()
 
   expect(component.setState).toHaveBeenCalled()
-  expect(propsWithValidation.onSelect).toHaveBeenCalled()
+  expect(propsWithValidation.onChange).toHaveBeenCalled()
 })
 
 test('AmfDropdown, test didUpdate event', () => {
   let props = {
-    item, onSelect
+    list, onChange
   }
 
   const component = new AmfDropdown(props)
@@ -175,9 +175,9 @@ test('AmfDropdown, test didUpdate event', () => {
   expect(componentFocused.validate).not.toHaveBeenCalled()
 })
 
-test('AmfDropdown, test new item', () => {
+test('AmfDropdown, test new list', () => {
   let props = {
-    item, onSelect
+    list, onChange
   }
   let newItem = [{
     label: 'new',
@@ -186,6 +186,6 @@ test('AmfDropdown, test new item', () => {
   let expected = newItem.map(i => i.label)
 
   const component = new AmfDropdown(props)
-  component.componentWillReceiveProps({item: newItem})
-  expect(component.item).toEqual(expected)
+  component.componentWillReceiveProps({list: newItem})
+  expect(component.list).toEqual(expected)
 })
