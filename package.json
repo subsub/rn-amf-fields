@@ -4,7 +4,7 @@
   "description": "Fields that use in react-native with standared styles",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist --ignore src/**/*.test.js",
+    "build": "babel src -d dist --ignore '**/*.test.js'",
     "test": "jest",
     "eslint": "eslint src"
   },
