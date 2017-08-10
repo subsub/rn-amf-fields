@@ -84,6 +84,7 @@ class AmfTextInput extends Component {
 					onChangeText={onChange}
 					keyboardType="default"
 			    returnKeyType="next"
+					options={{}}
 					value={value || ""}
 				/>
 			  { validationText }
