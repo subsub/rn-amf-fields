@@ -7,10 +7,9 @@
     "build": "babel src -d dist --ignore '**/*.test.js'",
     "test": "jest",
     "eslint": "eslint src",
-    "automatic-publish": "git checkout master; git merge dev; npm run build; npm version patch; git push; npm publish; git checkout dev;",
-    "preversion": "npm run eslint --fix; npm test",
-    "version": "git checkout master; git merge dev; npm run build && git add -A dist",
-    "postversion": "git push && git push --tags && git checkout dev"
+    "preversion": "npm run eslint --fix; npm test; ",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git checkout master; git merge dev; git push; git push --tags; git checkout dev"
   },
   "repository": {
     "type": "git",
