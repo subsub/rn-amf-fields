@@ -7,7 +7,10 @@
     "build": "babel src -d dist --ignore '**/*.test.js'",
     "test": "jest",
     "eslint": "eslint src",
-    "automatic-publish": "git checkout master; git merge dev; npm run build; npm version patch; git push; npm publish; git checkout dev;"
+    "automatic-publish": "git checkout master; git merge dev; npm run build; npm version patch; git push; npm publish; git checkout dev;",
+    "preversion": "npm run eslint --fix; npm test",
+    "version": "git checkout master; git merge dev; npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && git checkout dev"
   },
   "repository": {
     "type": "git",
@@ -31,7 +34,7 @@
     "moment": "^2.18.1",
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.2",
-    "react-native-material-textfield": "git+https://github.com/egon12/react-native-material-textfield.git",
+    "react-native-material-textfield": "egon12/react-native-material-textfield.git",
     "react-native-simple-radio-button": "2.6.0",
     "react-native-vector-icons": "4.3.0",
     "react-test-renderer": "16.0.0-alpha.12"
@@ -50,7 +53,7 @@
     "prop-types": "15.5.10",
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.2",
-    "react-native-material-textfield": "git+https://github.com/egon12/react-native-material-textfield.git",
+    "react-native-material-textfield": "egon12/react-native-material-textfield.git",
     "react-native-simple-radio-button": "2.6.0",
     "react-native-vector-icons": "4.3.0",
     "react-test-renderer": "16.0.0-alpha.12"
