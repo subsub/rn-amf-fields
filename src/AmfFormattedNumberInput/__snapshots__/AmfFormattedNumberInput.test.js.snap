@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AmfNumberInput without validation 1`] = `
+exports[`AmfFormattedNumberInput without validation 1`] = `
 <View>
   <View
     onResponderRelease={[Function]}
@@ -26,13 +26,13 @@ exports[`AmfNumberInput without validation 1`] = `
         style={
           Object {
             "position": "absolute",
-            "top": 36,
+            "top": 16,
           }
         }
       >
         <Text
           accessible={true}
-          active={false}
+          active={true}
           allowFontScaling={true}
           animationDuration={225}
           collapsable={undefined}
@@ -44,7 +44,7 @@ exports[`AmfNumberInput without validation 1`] = `
           style={
             Object {
               "color": "rgba(0, 0, 0, 0.38)",
-              "fontSize": 16,
+              "fontSize": 12,
             }
           }
         >
@@ -63,7 +63,7 @@ exports[`AmfNumberInput without validation 1`] = `
           blurOnSubmit={true}
           disableFullscreenUI={true}
           editable={true}
-          keyboardType="number-pad"
+          keyboardType="numeric"
           onBlur={[Function]}
           onChange={[Function]}
           onChangeText={[Function]}
@@ -88,7 +88,7 @@ exports[`AmfNumberInput without validation 1`] = `
             ]
           }
           underlineColorAndroid="transparent"
-          value=""
+          value="0"
         />
       </View>
     </View>

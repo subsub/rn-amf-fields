@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import AmfTextInput from '../AmfTextInput/AmfTextInput'
 import AmfNumberInput from '../AmfNumberInput/AmfNumberInput'
+import AmfFormattedNumberInput from '../AmfFormattedNumberInput/AmfFormattedNumberInput'
+import AmfRadioButton from '../AmfRadioButton/AmfRadioButton'
+import AmfSelect from '../AmfSelect/AmfSelect'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
 const switcher = {
 	'text': AmfTextInput,
-	'number': AmfNumberInput
+	'number': AmfNumberInput,
+	'formatted-number': AmfFormattedNumberInput,
+	'select': AmfSelect,
+	'radio' : AmfRadioButton,
 }
 
 class AmfField extends Component {

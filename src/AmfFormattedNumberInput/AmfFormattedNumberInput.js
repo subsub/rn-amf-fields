@@ -4,17 +4,6 @@ import { StyleSheet, TextInput, Text, View } from 'react-native'
 import { TextField } from 'react-native-material-textfield';
 import numeral from 'numeral'
 
-/**
- * sorry fo the hardcode
- *
- */
-numeral.register('locale', 'id', {
-  delimiters: { thousands : '.', decimal : ',' },
-  abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
-  ordinal : i => '',
-  currency: { symbol: 'Rp' }
-})
-numeral.locale('id')
 
 class AmfNumberInput extends Component {
   constructor(props) {
@@ -58,25 +47,29 @@ class AmfNumberInput extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
+  onChangeText = val => onChange(numeral(val).value)
+
   render() {
     let textInputValidationStyle = {}
     let validationText
 
-    const { label, value, onChange } = this.props;
+    const { label, value } = this.props;
 
     if (!this.state.valid) {
       textInputValidationStyle = { borderColor: 'red' }
       validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
     }
-		
+
+    let shownValue = value == '' ? '' : numeral(value).format()
+
     return (
       <View>
       <TextField
         label={label}
-        onChangeText={onChange}
-        keyboardType="number-pad"
+        onChangeText={this.onChangeText}
+        keyboardType="numeric"
         returnKeyType="next"
-        value={value || ''}
+        value={shownValue}
       />
       { validationText }
       </View>

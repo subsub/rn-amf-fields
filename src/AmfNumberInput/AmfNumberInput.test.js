@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer'
 test('AmfNumberInput without validation', () => {
   let props = {
     label: 'Label',
-    onChangeValue: () => {},
+    onChange: () => {},
     value: null
   }
 

@@ -1,8 +1,25 @@
 import AmfTextInput from './AmfTextInput/AmfTextInput'
 import AmfNumberInput from './AmfNumberInput/AmfNumberInput'
-import AmfDropdown from './AmfDropdown/AmfDropdown'
+import AmfSelect from './AmfSelect/AmfSelect'
 import AmfDatepicker from './AmfDatepicker/AmfDatepicker'
-import AmfDateText from './AmfDateText/AmfDateText'
+import AmfDateInput from './AmfDateInput/AmfDateInput'
 import AmfField from './AmfField/AmfField'
+import numeral from 'numeral'
 
-export { AmfTextInput, AmfNumberInput, AmfDropdown, AmfDatepicker, AmfDateText, AmfField }
+/**
+ * sorry fo the hardcode
+ *
+ */
+
+if (!numeral.locales.id) {
+	numeral.register('locale', 'id', {
+		delimiters: { thousands : '.', decimal : ',' },
+		abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
+		ordinal : i => '',
+		currency: { symbol: 'Rp' }
+	})
+}
+
+numeral.locale('id')
+
+export { AmfTextInput, AmfNumberInput, AmfSelect, AmfDatepicker, AmfDateInput, AmfField }

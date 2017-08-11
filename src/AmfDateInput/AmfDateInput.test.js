@@ -1,15 +1,15 @@
 import React from 'react'
-import AmfDateText from './AmfDateText'
+import AmfDateInput from './AmfDateInput'
 import renderer from 'react-test-renderer'
 
-test('AmfDateText without validation', () => {
+test('AmfDateInput without validation', () => {
   let props = {
     label: 'Label',
     onChange: () => {},
     value: null
   }
 
-  const component = renderer.create(<AmfDateText {...props} />)
+  const component = renderer.create(<AmfDateInput {...props} />)
 
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()

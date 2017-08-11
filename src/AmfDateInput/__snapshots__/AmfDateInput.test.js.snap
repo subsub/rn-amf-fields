@@ -1,0 +1,638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AmfDateInput without validation 1`] = `
+<View>
+  <View
+    style={null}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#454545",
+          "marginRight": 16,
+        }
+      }
+    >
+      Label
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "padding": 8,
+          },
+          Object {},
+        ]
+      }
+    >
+      <View
+        style={undefined}
+      >
+        <RCTPicker
+          items={
+            Array [
+              Object {
+                "label": "01",
+                "textColor": undefined,
+                "value": "01",
+              },
+              Object {
+                "label": "02",
+                "textColor": undefined,
+                "value": "02",
+              },
+              Object {
+                "label": "03",
+                "textColor": undefined,
+                "value": "03",
+              },
+              Object {
+                "label": "04",
+                "textColor": undefined,
+                "value": "04",
+              },
+              Object {
+                "label": "05",
+                "textColor": undefined,
+                "value": "05",
+              },
+              Object {
+                "label": "06",
+                "textColor": undefined,
+                "value": "06",
+              },
+              Object {
+                "label": "07",
+                "textColor": undefined,
+                "value": "07",
+              },
+              Object {
+                "label": "08",
+                "textColor": undefined,
+                "value": "08",
+              },
+              Object {
+                "label": "09",
+                "textColor": undefined,
+                "value": "09",
+              },
+              Object {
+                "label": "10",
+                "textColor": undefined,
+                "value": "10",
+              },
+              Object {
+                "label": "11",
+                "textColor": undefined,
+                "value": "11",
+              },
+              Object {
+                "label": "12",
+                "textColor": undefined,
+                "value": "12",
+              },
+              Object {
+                "label": "13",
+                "textColor": undefined,
+                "value": "13",
+              },
+              Object {
+                "label": "14",
+                "textColor": undefined,
+                "value": "14",
+              },
+              Object {
+                "label": "15",
+                "textColor": undefined,
+                "value": "15",
+              },
+              Object {
+                "label": "16",
+                "textColor": undefined,
+                "value": "16",
+              },
+              Object {
+                "label": "17",
+                "textColor": undefined,
+                "value": "17",
+              },
+              Object {
+                "label": "18",
+                "textColor": undefined,
+                "value": "18",
+              },
+              Object {
+                "label": "19",
+                "textColor": undefined,
+                "value": "19",
+              },
+              Object {
+                "label": "20",
+                "textColor": undefined,
+                "value": "20",
+              },
+              Object {
+                "label": "21",
+                "textColor": undefined,
+                "value": "21",
+              },
+              Object {
+                "label": "22",
+                "textColor": undefined,
+                "value": "22",
+              },
+              Object {
+                "label": "23",
+                "textColor": undefined,
+                "value": "23",
+              },
+              Object {
+                "label": "24",
+                "textColor": undefined,
+                "value": "24",
+              },
+              Object {
+                "label": "25",
+                "textColor": undefined,
+                "value": "25",
+              },
+              Object {
+                "label": "26",
+                "textColor": undefined,
+                "value": "26",
+              },
+              Object {
+                "label": "27",
+                "textColor": undefined,
+                "value": "27",
+              },
+              Object {
+                "label": "28",
+                "textColor": undefined,
+                "value": "28",
+              },
+              Object {
+                "label": "29",
+                "textColor": undefined,
+                "value": "29",
+              },
+              Object {
+                "label": "31",
+                "textColor": undefined,
+                "value": "31",
+              },
+            ]
+          }
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          selectedIndex={0}
+          style={
+            Array [
+              Object {
+                "height": 216,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#9B9B9B",
+            "fontSize": 20,
+            "marginHorizontal": 4,
+          }
+        }
+      >
+        /
+      </Text>
+      <View
+        style={undefined}
+      >
+        <RCTPicker
+          items={
+            Array [
+              Object {
+                "label": "Jan",
+                "textColor": undefined,
+                "value": "Jan",
+              },
+              Object {
+                "label": "Feb",
+                "textColor": undefined,
+                "value": "Feb",
+              },
+              Object {
+                "label": "Mar",
+                "textColor": undefined,
+                "value": "Mar",
+              },
+              Object {
+                "label": "Apr",
+                "textColor": undefined,
+                "value": "Apr",
+              },
+              Object {
+                "label": "Mei",
+                "textColor": undefined,
+                "value": "Mei",
+              },
+              Object {
+                "label": "Jun",
+                "textColor": undefined,
+                "value": "Jun",
+              },
+              Object {
+                "label": "Jul",
+                "textColor": undefined,
+                "value": "Jul",
+              },
+              Object {
+                "label": "Ags",
+                "textColor": undefined,
+                "value": "Ags",
+              },
+              Object {
+                "label": "Sep",
+                "textColor": undefined,
+                "value": "Sep",
+              },
+              Object {
+                "label": "Okt",
+                "textColor": undefined,
+                "value": "Okt",
+              },
+              Object {
+                "label": "Nov",
+                "textColor": undefined,
+                "value": "Nov",
+              },
+              Object {
+                "label": "Des",
+                "textColor": undefined,
+                "value": "Des",
+              },
+            ]
+          }
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          selectedIndex={0}
+          style={
+            Array [
+              Object {
+                "height": 216,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#9B9B9B",
+            "fontSize": 20,
+            "marginHorizontal": 4,
+          }
+        }
+      >
+        /
+      </Text>
+      <View
+        style={undefined}
+      >
+        <RCTPicker
+          items={
+            Array [
+              Object {
+                "label": "1940",
+                "textColor": undefined,
+                "value": "1940",
+              },
+              Object {
+                "label": "1941",
+                "textColor": undefined,
+                "value": "1941",
+              },
+              Object {
+                "label": "1942",
+                "textColor": undefined,
+                "value": "1942",
+              },
+              Object {
+                "label": "1943",
+                "textColor": undefined,
+                "value": "1943",
+              },
+              Object {
+                "label": "1944",
+                "textColor": undefined,
+                "value": "1944",
+              },
+              Object {
+                "label": "1945",
+                "textColor": undefined,
+                "value": "1945",
+              },
+              Object {
+                "label": "1946",
+                "textColor": undefined,
+                "value": "1946",
+              },
+              Object {
+                "label": "1947",
+                "textColor": undefined,
+                "value": "1947",
+              },
+              Object {
+                "label": "1948",
+                "textColor": undefined,
+                "value": "1948",
+              },
+              Object {
+                "label": "1949",
+                "textColor": undefined,
+                "value": "1949",
+              },
+              Object {
+                "label": "1950",
+                "textColor": undefined,
+                "value": "1950",
+              },
+              Object {
+                "label": "1951",
+                "textColor": undefined,
+                "value": "1951",
+              },
+              Object {
+                "label": "1952",
+                "textColor": undefined,
+                "value": "1952",
+              },
+              Object {
+                "label": "1953",
+                "textColor": undefined,
+                "value": "1953",
+              },
+              Object {
+                "label": "1954",
+                "textColor": undefined,
+                "value": "1954",
+              },
+              Object {
+                "label": "1955",
+                "textColor": undefined,
+                "value": "1955",
+              },
+              Object {
+                "label": "1956",
+                "textColor": undefined,
+                "value": "1956",
+              },
+              Object {
+                "label": "1957",
+                "textColor": undefined,
+                "value": "1957",
+              },
+              Object {
+                "label": "1958",
+                "textColor": undefined,
+                "value": "1958",
+              },
+              Object {
+                "label": "1959",
+                "textColor": undefined,
+                "value": "1959",
+              },
+              Object {
+                "label": "1960",
+                "textColor": undefined,
+                "value": "1960",
+              },
+              Object {
+                "label": "1961",
+                "textColor": undefined,
+                "value": "1961",
+              },
+              Object {
+                "label": "1962",
+                "textColor": undefined,
+                "value": "1962",
+              },
+              Object {
+                "label": "1963",
+                "textColor": undefined,
+                "value": "1963",
+              },
+              Object {
+                "label": "1964",
+                "textColor": undefined,
+                "value": "1964",
+              },
+              Object {
+                "label": "1965",
+                "textColor": undefined,
+                "value": "1965",
+              },
+              Object {
+                "label": "1966",
+                "textColor": undefined,
+                "value": "1966",
+              },
+              Object {
+                "label": "1967",
+                "textColor": undefined,
+                "value": "1967",
+              },
+              Object {
+                "label": "1968",
+                "textColor": undefined,
+                "value": "1968",
+              },
+              Object {
+                "label": "1969",
+                "textColor": undefined,
+                "value": "1969",
+              },
+              Object {
+                "label": "1970",
+                "textColor": undefined,
+                "value": "1970",
+              },
+              Object {
+                "label": "1971",
+                "textColor": undefined,
+                "value": "1971",
+              },
+              Object {
+                "label": "1972",
+                "textColor": undefined,
+                "value": "1972",
+              },
+              Object {
+                "label": "1973",
+                "textColor": undefined,
+                "value": "1973",
+              },
+              Object {
+                "label": "1974",
+                "textColor": undefined,
+                "value": "1974",
+              },
+              Object {
+                "label": "1975",
+                "textColor": undefined,
+                "value": "1975",
+              },
+              Object {
+                "label": "1976",
+                "textColor": undefined,
+                "value": "1976",
+              },
+              Object {
+                "label": "1977",
+                "textColor": undefined,
+                "value": "1977",
+              },
+              Object {
+                "label": "1978",
+                "textColor": undefined,
+                "value": "1978",
+              },
+              Object {
+                "label": "1979",
+                "textColor": undefined,
+                "value": "1979",
+              },
+              Object {
+                "label": "1980",
+                "textColor": undefined,
+                "value": "1980",
+              },
+              Object {
+                "label": "1981",
+                "textColor": undefined,
+                "value": "1981",
+              },
+              Object {
+                "label": "1982",
+                "textColor": undefined,
+                "value": "1982",
+              },
+              Object {
+                "label": "1983",
+                "textColor": undefined,
+                "value": "1983",
+              },
+              Object {
+                "label": "1984",
+                "textColor": undefined,
+                "value": "1984",
+              },
+              Object {
+                "label": "1985",
+                "textColor": undefined,
+                "value": "1985",
+              },
+              Object {
+                "label": "1986",
+                "textColor": undefined,
+                "value": "1986",
+              },
+              Object {
+                "label": "1987",
+                "textColor": undefined,
+                "value": "1987",
+              },
+              Object {
+                "label": "1988",
+                "textColor": undefined,
+                "value": "1988",
+              },
+              Object {
+                "label": "1989",
+                "textColor": undefined,
+                "value": "1989",
+              },
+              Object {
+                "label": "1990",
+                "textColor": undefined,
+                "value": "1990",
+              },
+              Object {
+                "label": "1991",
+                "textColor": undefined,
+                "value": "1991",
+              },
+              Object {
+                "label": "1992",
+                "textColor": undefined,
+                "value": "1992",
+              },
+              Object {
+                "label": "1993",
+                "textColor": undefined,
+                "value": "1993",
+              },
+              Object {
+                "label": "1994",
+                "textColor": undefined,
+                "value": "1994",
+              },
+              Object {
+                "label": "1995",
+                "textColor": undefined,
+                "value": "1995",
+              },
+              Object {
+                "label": "1996",
+                "textColor": undefined,
+                "value": "1996",
+              },
+              Object {
+                "label": "1997",
+                "textColor": undefined,
+                "value": "1997",
+              },
+              Object {
+                "label": "1998",
+                "textColor": undefined,
+                "value": "1998",
+              },
+            ]
+          }
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          selectedIndex={0}
+          style={
+            Array [
+              Object {
+                "height": 216,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

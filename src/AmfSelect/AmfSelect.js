@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { StyleSheet, Text, View, Picker } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-class AmfDropdown extends Component {
+class AmfSelect extends Component {
   constructor(props) {
+
     super(props)
 
     this.state = {
@@ -25,10 +26,8 @@ class AmfDropdown extends Component {
   }
 
   getLabel = (val) => {
-    let item = this.props.item.find(i => i.value === val)
-    if (item) return item.label
-
-    return val
+    let option = this.props.options.find(i => i.value === val)
+    return option && option.label
   }
 
   inputValid = () => {
@@ -46,36 +45,25 @@ class AmfDropdown extends Component {
     return ({status: true})
   }
 
-  onDropdownWillShow = () => {
+  onSelectWillShow = () => {
     if (this.props.validation && this.props.validation.required && this.props.value === null) {
-      this.props.onSelect('')
+      this.props.onChange('')
     }
 
     this.setState({isFocused: true})
   }
 
-  onDropdownWillHide = () => {
+  onSelectWillHide = () => {
     this.setState({isFocused: false})
   }
 
-  onSelect = (idx, value) => {
-    this.props.onChange(this.props.item[idx].value)
+  onSelect = (value) => {
+    this.props.onChange(value)
   }
 
   validate = () => {
     let validationObject = this.inputValid()
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
-  }
-
-  renderSelector() {
-    if (this.props.selector) return this.props.selector
-
-    return (
-      <View style={[style.option, this.props.optionStyle]}>
-        <Text style={style.valueText}>{this.props.value ? this.getLabel(this.props.value) : ''}</Text>
-        <Icon name="keyboard-arrow-down" size={16} style={style.icon} />
-      </View>
-    )
   }
 
   render() {
@@ -99,7 +87,7 @@ class AmfDropdown extends Component {
         <View style={ layout === 'horizontal' ? style.containerHorizontal : style.container }>
           { labelText }
             <Picker selectedValue={value} onValueChange={this.onSelect} >
-              { this.props.list.map(item => <Picker.Item {...item} />) }
+              { this.props.options.map((option, index) => <Picker.Item key={index} {...option} />) }
             </Picker>
         </View>
         { validationText }
@@ -156,14 +144,14 @@ const itemShape = PropTypes.shape({
   value: PropTypes.any.isRequired
 })
 
-AmfDropdown.defaultProps = {
+AmfSelect.defaultProps = {
   layout: 'vertical'
 }
 
-AmfDropdown.propTypes = {
+AmfSelect.propTypes = {
   disabled: PropTypes.bool,
   dropdownStyle: PropTypes.object,
-  list: PropTypes.arrayOf(itemShape).isRequired,
+  options: PropTypes.arrayOf(itemShape).isRequired,
   label: PropTypes.string,
   layout: PropTypes.oneOf(['vertical', 'horizontal']),
   onChange: PropTypes.func.isRequired,
@@ -174,4 +162,4 @@ AmfDropdown.propTypes = {
   value: PropTypes.any,
 }
 
-export default AmfDropdown
+export default AmfSelect

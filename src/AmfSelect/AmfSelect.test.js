@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text } from 'react-native'
-import AmfDropdown from './AmfDropdown'
+import AmfSelect from './AmfSelect'
 import renderer from 'react-test-renderer'
 
-let list = [{
+let options = [{
   label: 'foo',
   value: 'foo'
 }, {
@@ -15,21 +15,21 @@ let validation = {
   required: true
 }
 
-test('AmfDropdown without validation', () => {
-  let props = { list, onChange }
+test('AmfSelect without validation', () => {
+  let props = { options, onChange }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown with label', () => {
-  let props = { list, onChange, label: 'Label' }
+test('AmfSelect with label', () => {
+  let props = { options, onChange, label: 'Label' }
   let propsHorizontal = { ...props, layout: 'horizontal' }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
-  const componentHorizontal = renderer.create(<AmfDropdown {...propsHorizontal} />)
+  const component = renderer.create(<AmfSelect {...props} />)
+  const componentHorizontal = renderer.create(<AmfSelect {...propsHorizontal} />)
   
   let tree = component.toJSON()
   let treeHorizontal = componentHorizontal.toJSON()
@@ -37,40 +37,40 @@ test('AmfDropdown with label', () => {
   expect(treeHorizontal).toMatchSnapshot()
 })
 
-test('AmfDropdown with custom selector', () => {
+test('AmfSelect with custom selector', () => {
   let props = {
-    list, onChange,
+    options, onChange,
     selector: <Text>Custom Selector</Text>
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown with horizontal layout', () => {
+test('AmfSelect with horizontal layout', () => {
   let props = {
-    list, onChange,
+    options, onChange,
     layout: 'horizontal'
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown with required validation', () => {
+test('AmfSelect with required validation', () => {
   let props = {
-    list, onChange, validation
+    options, onChange, validation
   }
   let propsWithValue = {
     ...props, value: 'foo'
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
-  const componentWithValue = renderer.create(<AmfDropdown {...propsWithValue} />)
+  const component = renderer.create(<AmfSelect {...props} />)
+  const componentWithValue = renderer.create(<AmfSelect {...propsWithValue} />)
   
   let tree = component.toJSON()
   let treeWithValue = componentWithValue.toJSON()
@@ -78,106 +78,106 @@ test('AmfDropdown with required validation', () => {
   expect(treeWithValue).toMatchSnapshot()
 })
 
-test('AmfDropdown with unmatch value', () => {
+test('AmfSelect with unmatch value', () => {
   let props = {
-    list, onChange, validation,
+    options, onChange, validation,
     value: 'No Match'
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown with empty value', () => {
+test('AmfSelect with empty value', () => {
   let props = {
-    list, onChange, validation,
+    options, onChange, validation,
     value: ''
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown with empty validation object', () => {
+test('AmfSelect with empty validation object', () => {
   let props = {
-    list, onChange,
+    options, onChange,
     validation: {}
   }
 
-  const component = renderer.create(<AmfDropdown {...props} />)
+  const component = renderer.create(<AmfSelect {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfDropdown test onChange function', () => {
+test('AmfSelect test onChange function', () => {
   let props = {
-    list, onChange
+    options, onChange
   }
 
-  const component = new AmfDropdown(props)
-  component.onChange(0, 'value')
+  const component = new AmfSelect(props)
+  component.onSelect(0, 'value')
   
   expect(props.onChange).toHaveBeenCalled()
 })
 
-test('AmfDropdown, test willHide event', () => {
+test('AmfSelect, test willHide event', () => {
   let props = {
-    list, onChange
+    options, onChange
   }
 
-  const component = new AmfDropdown(props)
+  const component = new AmfSelect(props)
   component.setState = jest.fn()
-  component.onDropdownWillHide()
+  component.onSelectWillHide()
   
   expect(component.setState).toHaveBeenCalled()
 })
 
-test('AmfDropdown, test willShow event', () => {
+test('AmfSelect, test willShow event', () => {
   let props = {
-    list, onChange
+    options, onChange
   }
   let propsWithValidation = {
     ...props, validation, value: null
   }
 
-  const component = new AmfDropdown(props)
+  const component = new AmfSelect(props)
   component.setState = jest.fn()
-  component.onDropdownWillShow()
+  component.onSelectWillShow()
 
-  const componentWithValidation = new AmfDropdown(propsWithValidation)
+  const componentWithValidation = new AmfSelect(propsWithValidation)
   componentWithValidation.setState = jest.fn()
-  componentWithValidation.onDropdownWillShow()
+  componentWithValidation.onSelectWillShow()
 
   expect(component.setState).toHaveBeenCalled()
   expect(propsWithValidation.onChange).toHaveBeenCalled()
 })
 
-test('AmfDropdown, test didUpdate event', () => {
+test('AmfSelect, test didUpdate event', () => {
   let props = {
-    list, onChange
+    options, onChange
   }
 
-  const component = new AmfDropdown(props)
+  const component = new AmfSelect(props)
   component.state = {isFocused: false}
   component.validate = jest.fn()
   component.componentDidUpdate({}, {isFocused: true})
   expect(component.validate).toHaveBeenCalled()
 
-  const componentFocused = new AmfDropdown(props)
+  const componentFocused = new AmfSelect(props)
   componentFocused.state = {isFocused: true}
   componentFocused.validate = jest.fn()
   componentFocused.componentDidUpdate({}, {isFocused: false})
   expect(componentFocused.validate).not.toHaveBeenCalled()
 })
 
-test('AmfDropdown, test new list', () => {
+test.skip('AmfSelect, test new options', () => {
   let props = {
-    list, onChange
+    options, onChange
   }
   let newItem = [{
     label: 'new',
@@ -185,7 +185,8 @@ test('AmfDropdown, test new list', () => {
   }]
   let expected = newItem.map(i => i.label)
 
-  const component = new AmfDropdown(props)
-  component.componentWillReceiveProps({list: newItem})
-  expect(component.list).toEqual(expected)
+  const component = new AmfSelect(props)
+  component.componentWillReceiveProps({options: newItem})
+
+  expect(component.options).toEqual(expected)
 })
