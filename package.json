@@ -1,13 +1,13 @@
 {
   "name": "rn-amf-fields",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fields that use in react-native with standared styles",
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --ignore '**/*.test.js'",
     "test": "jest",
     "eslint": "eslint src",
-		"publish": "git checkout master; git merge dev; npm run build; npm version patch; git push; npm publish; git checkout dev;"
+    "publish": "git checkout master; git merge dev; npm run build; npm version patch; git push; npm publish; git checkout dev;"
   },
   "repository": {
     "type": "git",
