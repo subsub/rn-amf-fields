@@ -22,10 +22,10 @@ class AmfField extends Component {
 	}
 
 	render() {
-		const { type, label, onChange, value, list  } = this.props;
+		const { type, label, onChange, value, options  } = this.props;
 		if (type in switcher) {
 			const Component = switcher[type];
-			return <Component type={type} label={label} onChange={onChange} value={value}  />
+			return <Component type={type} label={label} onChange={onChange} value={value} options={options} />
 		} else {
 			throw new TypeError ('Unknown type Field "' + type + '" in AmfField');
 		}

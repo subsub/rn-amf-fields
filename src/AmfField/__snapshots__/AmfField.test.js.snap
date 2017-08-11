@@ -1,5 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AmfField should able to render AmfSelect (should transfer its options) 1`] = `
+<View>
+  <View
+    style={Object {}}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#454545",
+            "marginRight": 16,
+          },
+          Object {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      Label satu dua tiga
+    </Text>
+    <View
+      style={undefined}
+    >
+      <RCTPicker
+        items={
+          Array [
+            Object {
+              "label": "Label 1",
+              "textColor": undefined,
+              "value": "Satu",
+            },
+            Object {
+              "label": "Label 2",
+              "textColor": undefined,
+              "value": "Dua",
+            },
+            Object {
+              "label": "Label 3",
+              "textColor": undefined,
+              "value": "Tiga",
+            },
+            Object {
+              "label": "Label 4",
+              "textColor": undefined,
+              "value": "Empat",
+            },
+          ]
+        }
+        onChange={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        selectedIndex={0}
+        style={
+          Array [
+            Object {
+              "height": 216,
+            },
+            undefined,
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`AmfField with wrong type 1`] = `"Unknown type Field \\"zzzzzzzzzzzzzzzzzzzzzzzz\\" in AmfField"`;
 
 exports[`AmfField without validation 1`] = `
