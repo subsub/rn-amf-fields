@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+	ScrollView
 } from 'react-native';
 import { AmfField } from 'rn-amf-fields';
 
@@ -24,6 +25,8 @@ export default class simple extends Component {
 			select: null,
 			radio: null,
 			radio2: null,
+			datepicker: null,
+			date: null,
 		}
 	}
 
@@ -33,10 +36,21 @@ export default class simple extends Component {
 
 		const cc = this.cc;
 
-		const { text, number, formattedNumber, select, radio, radio2 } = this.state;
+		const { 
+			text,
+			number,
+			formattedNumber,
+			select,
+			radio,
+			radio2, 
+			datepicker,
+			date,
+		} = this.state;
 
 
     return (
+			<ScrollView>
+
       <View style={styles.container}>
 
 				<AmfField type="text"             
@@ -92,6 +106,18 @@ export default class simple extends Component {
 					]}
 				/>
 
+				<AmfField type="datepicker"             
+					label="datepicker" 
+					onChange={cc('datepicker')}            
+					value={datepicker}
+				/>
+
+				<AmfField type="date"             
+					label="date" 
+					onChange={cc('date')}            
+					value={date}
+				/>
+
 				<Text>
 					{text} {'\n'}
 					{number} {'\n'}
@@ -99,11 +125,14 @@ export default class simple extends Component {
 					{select} {'\n'}
 					{radio} {'\n'}
 					{radio2} {'\n'}
+					{datepicker} {'\n'}
+					{date} {'\n'}
 
 
 				</Text>
 
       </View>
+			</ScrollView>
     );
   }
 }
