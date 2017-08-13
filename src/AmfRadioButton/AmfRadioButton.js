@@ -9,11 +9,11 @@ class AmfRadioButton extends Component {
   }
 
   render() {
-    const { label, items, value, required } = this.props
+    const { label, options, value, required } = this.props
 
     let validationStyle = {}
     let validationText
-    let selected = items.find(i => i.value === value)
+    let selected = options.find(i => i.value === value)
     if (required && selected === undefined && value !== null) {
       validationStyle = { borderColor: 'red', borderWidth: 1 }
       validationText = <Text style={style.errorText}>{label} harus dipilih</Text>
@@ -23,12 +23,12 @@ class AmfRadioButton extends Component {
       <View>
         <Text style={style.label}>{this.props.label}</Text>
         <RadioForm
-          radio_props={items}
+          radio_props={options}
           buttonColor='black'
           buttonSize={12}
-          initial={items.findIndex((item) => item.value === value)}
+          initial={options.findIndex((item) => item.value === value)}
           labelStyle={{marginBottom: 6}}
-          onPress={this.props.onPress}
+          onPress={this.props.onChange}
           style={[style.radioForm, validationStyle]}
         />
         { validationText }
@@ -83,7 +83,7 @@ const itemShape = PropTypes.shape({
 
 AmfRadioButton.propTypes = {
   label: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(itemShape).isRequired,
+  options: PropTypes.arrayOf(itemShape).isRequired,
   onPress: PropTypes.func.isRequired,
   required: PropTypes.bool,
   value: PropTypes.any
