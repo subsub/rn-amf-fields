@@ -3,6 +3,8 @@ import AmfTextInput from '../AmfTextInput/AmfTextInput'
 import AmfNumberInput from '../AmfNumberInput/AmfNumberInput'
 import AmfFormattedNumberInput from '../AmfFormattedNumberInput/AmfFormattedNumberInput'
 import AmfRadioButton from '../AmfRadioButton/AmfRadioButton'
+import AmfDatepicker from '../AmfDatepicker/AmfDatepicker'
+import AmfDateInput from '../AmfDateInput/AmfDateInput'
 import AmfSelect from '../AmfSelect/AmfSelect'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
@@ -13,6 +15,8 @@ const switcher = {
 	'formatted-number': AmfFormattedNumberInput,
 	'select': AmfSelect,
 	'radio' : AmfRadioButton,
+	'datepicker': AmfDatepicker,
+	'date': AmfDateInput,
 }
 
 class AmfField extends Component {

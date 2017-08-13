@@ -27,7 +27,7 @@ class AmfDateInput extends Component {
     }
   }
 
-  updateDate = (type, val) =>  {
+  updateValue = (type, val) =>  {
 
     let year  = type == 'year'  ? val : this.state.year
     let month = type == 'month' ? val : this.state.month
@@ -40,7 +40,7 @@ class AmfDateInput extends Component {
 		let date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
 
 		while (date == 'Invalid date') {
-			day = (parseInt(day)-1).toString().padStart(2, '0')
+			day = (parseInt(day)-1).padStart(2, '0')
 			date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
 		}
 
@@ -77,26 +77,26 @@ class AmfDateInput extends Component {
       validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
     }
 
+		const updateValue = this.updateValue;
+
     return (
-      <View>
-        <View style={ this.props.layout === 'horizontal' ? style.container : null}>
+      <View style={{flexDirection:'row', alignItems: 'center'}}>
+
           <Text style={style.label}>{this.props.label}</Text>
           <View style={[style.pickerContainer, validationStyle]}>
-						<Picker mode='dropdown' onValueChange={val => updateValue('day', val)} value={day}>
-							{ days.map(i => <Picker.Item key={i} value={i} label={i} />) }
+						<Picker mode='dropdown' onValueChange={val => updateValue('day', val)} selectedValue={day} style={{width:58}}>
+							{ days.map(i => <Picker.Item key={'d' + i} value={i} label={i} />) }
 						</Picker>
             <Text style={style.dividerText}>/</Text>
 
-						<Picker mode='dropdown' onValueChange={val => updateValue('day', val)} value={month}>
-							{ months.map(i => <Picker.Item key={i} value={i} label={i} />) }
+						<Picker mode='dropdown' onValueChange={val => updateValue('month', val)} selectedValue={month} style={{width:70}}>
+							{ months.map(i => <Picker.Item key={'m' + i} value={i} label={i} />) }
 						</Picker>
             <Text style={style.dividerText}>/</Text>
-							
-						<Picker mode='dropdown' onValueChange={val => updateValue('day', val)} value={year}>
-							{ years.map(i => <Picker.Item key={i} value={i} label={i} />) }
+						<Picker mode='dropdown' onValueChange={val => updateValue('year', val)} selectedValue={year} style={{width:80}}>
+							{ years.map(i => <Picker.Item key={'y' + i} value={i} label={i} />) }
 						</Picker>
 
-          </View>
         </View>
         { validationText }
       </View>
@@ -136,7 +136,6 @@ const style = StyleSheet.create({
   pickerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 8
   },
   selector: {
     flexDirection: 'row',
@@ -144,7 +143,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
     height: 30
   },
-  textInput: {
+  picker: {
     textAlign: 'center'
   }
 })

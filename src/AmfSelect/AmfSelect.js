@@ -67,7 +67,7 @@ class AmfSelect extends Component {
   }
 
   render() {
-    const { layout, value } = this.props
+    const { layout, value, label } = this.props
 
     let validationStyle = {}
     let validationText
@@ -84,12 +84,11 @@ class AmfSelect extends Component {
 
     return (
       <View>
-        <View style={ layout === 'horizontal' ? style.containerHorizontal : style.container }>
-          { labelText }
-            <Picker selectedValue={value} onValueChange={this.onSelect} >
-              { this.props.options.map((option, index) => <Picker.Item key={index} {...option} />) }
-            </Picker>
-        </View>
+				<Picker selectedValue={value} onValueChange={this.onSelect} >
+					<Picker.Item label={label} />
+					{ this.props.options.map((option, index) => <Picker.Item key={index} {...option} />) }
+				</Picker>
+				<View style={{backgroundColor:'#4b6ac5', borderColor:'#4b6ac5', borderStyle:'solid', height:3}} />
         { validationText }
       </View>
     )

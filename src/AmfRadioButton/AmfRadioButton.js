@@ -104,7 +104,6 @@ const itemShape = PropTypes.shape({
 AmfRadioButton.propTypes = {
   label: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(itemShape).isRequired,
-  onPress: PropTypes.func.isRequired,
   required: PropTypes.bool,
   value: PropTypes.any
 }

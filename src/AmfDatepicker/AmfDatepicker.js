@@ -14,6 +14,9 @@ class AmfDatepicker extends Component {
   }
 
   async openDatepicker(currentDate) {
+
+		const { onChange } = this.props;
+
     try {
       let options = {
         date : moment.unix(currentDate).valueOf()
@@ -22,9 +25,10 @@ class AmfDatepicker extends Component {
 
       if (action !== DatePickerAndroid.dismissedAction) {
         let formattedDate = moment({y: year, M: month, d: day}).format('YYYY-MM-DD')
-        this.props.onSelect(formattedDate)
+				console.log(formattedDate);
+        onChange(formattedDate)
       } else {
-        this.props.onSelect('')
+        onChange('')
       }
 
     } catch ({code, message}) {
@@ -67,8 +71,10 @@ class AmfDatepicker extends Component {
   }
 
   render() {
+
+		const { value } = this.props;
     let dateFormatted
-    if (this.props.selectedDate && this.props.selectedDate !== '') dateFormatted = moment(this.props.selectedDate, 'YYYY-MM-DD').format('DD/MMM/YYYY')
+    if (value) dateFormatted = moment(value, 'YYYY-MM-DD').format('DD/MMM/YYYY')
     else dateFormatted = 'Pilih Tgl'
 
     let validationStyle = {}
@@ -80,7 +86,7 @@ class AmfDatepicker extends Component {
 
     return (
       <View>
-        <View style={ this.props.layout === 'horizontal' ? styles.container : null}>
+        <View style={styles.container}>
           <Text style={styles.label}>{this.props.label}</Text>
           <TouchableOpacity style={[styles.calendarButton, validationStyle]}
             onPress={this.onPress}
@@ -97,13 +103,14 @@ class AmfDatepicker extends Component {
 const styles = StyleSheet.create({
   container : {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+		justifyContent: 'space-between'
   },
   calendarButton: {
     backgroundColor: 'white',
     elevation: 4,
-    borderRadius: 16,
-    width: 100,
+    borderRadius: 0,
+    width: 120,
     padding: 7,
     alignItems: 'center'
   },
@@ -121,7 +128,7 @@ const styles = StyleSheet.create({
 AmfDatepicker.propTypes = {
   label: PropTypes.string,
   layout: PropTypes.oneOf(['vertical', 'horizontal']),
-  onSelect : PropTypes.func.isRequired,
+  onChange : PropTypes.func.isRequired,
   selectedDate : PropTypes.string,
   validation: PropTypes.object
 }
