@@ -8,13 +8,6 @@ import numeral from 'numeral'
  * sorry fo the hardcode
  *
  */
-numeral.register('locale', 'id', {
-  delimiters: { thousands : '.', decimal : ',' },
-  abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
-  ordinal : i => '',
-  currency: { symbol: 'Rp' }
-})
-numeral.locale('id')
 
 class AmfNumberInput extends Component {
   constructor(props) {
@@ -74,7 +67,7 @@ class AmfNumberInput extends Component {
       <TextField
         label={label}
         onChangeText={onChange}
-        keyboardType="number-pad"
+        keyboardType="numeric"
         returnKeyType="next"
         value={value || ''}
       />

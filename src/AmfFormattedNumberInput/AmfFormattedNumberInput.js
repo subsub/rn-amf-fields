@@ -47,7 +47,7 @@ class AmfNumberInput extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
-  onChangeText = val => onChange(numeral(val).value)
+  onChangeText = val => this.props.onChange(numeral(val).value())
 
   render() {
     let textInputValidationStyle = {}
@@ -60,7 +60,10 @@ class AmfNumberInput extends Component {
       validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
     }
 
-    let shownValue = value == '' ? '' : numeral(value).format()
+    let shownValue = value && numeral(value).format()
+		if (value === 0) {
+			shownValue = '0'
+		}
 
     return (
       <View>
@@ -69,7 +72,7 @@ class AmfNumberInput extends Component {
         onChangeText={this.onChangeText}
         keyboardType="numeric"
         returnKeyType="next"
-        value={shownValue}
+        value={shownValue || ''}
       />
       { validationText }
       </View>
