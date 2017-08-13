@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native'
-import RadioForm from 'react-native-simple-radio-button'
+import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button'
 
 class AmfRadioButton extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class AmfRadioButton extends Component {
   }
 
   render() {
-    const { label, options, value, required } = this.props
+    const { label, options, value, onChange, required } = this.props
 
     let validationStyle = {}
     let validationText
@@ -22,15 +22,35 @@ class AmfRadioButton extends Component {
     return (
       <View>
         <Text style={style.label}>{this.props.label}</Text>
-        <RadioForm
-          radio_props={options}
-          buttonColor='black'
-          buttonSize={12}
-          initial={options.findIndex((item) => item.value === value)}
-          labelStyle={{marginBottom: 6}}
-          onPress={this.props.onChange}
-          style={[style.radioForm, validationStyle]}
-        />
+        <RadioForm formHorizontal={true} >
+					{ options.map( (option, i) => (
+					<RadioButton labelHorizontal={true} key={i} >
+						{/*  You can set RadioButtonLabel before RadioButtonInput */}
+						<RadioButtonInput
+							obj={option}
+							index={i}
+							isSelected={option.value === value}
+							onPress={onChange}
+							borderWidth={1}
+							buttonInnerColor={'#009688'}
+							buttonOuterColor={option.value === value ? '#009688' : '#000000' }
+							buttonSize={16}
+							buttonOuterSize={24}
+							buttonStyle={{}}
+							buttonWrapStyle={{marginLeft: 10}}
+						/>
+						<RadioButtonLabel
+							obj={option}
+							index={i}
+							labelHorizontal={true}
+							onPress={onChange}
+							labelStyle={{}}
+							labelWrapStyle={{}}
+						/>
+					</RadioButton>
+					))}
+
+				</RadioForm>
         { validationText }
       </View>
     )
