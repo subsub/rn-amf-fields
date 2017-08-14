@@ -3,70 +3,62 @@
 exports[`AmfField should able to render AmfSelect (should transfer its options) 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
+    <RCTPicker
+      items={
         Array [
           Object {
-            "color": "#454545",
-            "marginRight": 16,
+            "label": "Label satu dua tiga",
+            "textColor": undefined,
+            "value": undefined,
           },
           Object {
-            "marginBottom": 8,
+            "label": "Label 1",
+            "textColor": undefined,
+            "value": "Satu",
+          },
+          Object {
+            "label": "Label 2",
+            "textColor": undefined,
+            "value": "Dua",
+          },
+          Object {
+            "label": "Label 3",
+            "textColor": undefined,
+            "value": "Tiga",
+          },
+          Object {
+            "label": "Label 4",
+            "textColor": undefined,
+            "value": "Empat",
           },
         ]
       }
-    >
-      Label satu dua tiga
-    </Text>
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "Label 1",
-              "textColor": undefined,
-              "value": "Satu",
-            },
-            Object {
-              "label": "Label 2",
-              "textColor": undefined,
-              "value": "Dua",
-            },
-            Object {
-              "label": "Label 3",
-              "textColor": undefined,
-              "value": "Tiga",
-            },
-            Object {
-              "label": "Label 4",
-              "textColor": undefined,
-              "value": "Empat",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={1}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 

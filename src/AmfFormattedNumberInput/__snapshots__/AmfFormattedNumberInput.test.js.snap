@@ -26,13 +26,13 @@ exports[`AmfFormattedNumberInput without validation 1`] = `
         style={
           Object {
             "position": "absolute",
-            "top": 16,
+            "top": 36,
           }
         }
       >
         <Text
           accessible={true}
-          active={true}
+          active={false}
           allowFontScaling={true}
           animationDuration={225}
           collapsable={undefined}
@@ -44,7 +44,7 @@ exports[`AmfFormattedNumberInput without validation 1`] = `
           style={
             Object {
               "color": "rgba(0, 0, 0, 0.38)",
-              "fontSize": 12,
+              "fontSize": 16,
             }
           }
         >
@@ -88,7 +88,7 @@ exports[`AmfFormattedNumberInput without validation 1`] = `
             ]
           }
           underlineColorAndroid="transparent"
-          value="0"
+          value=""
         />
       </View>
     </View>

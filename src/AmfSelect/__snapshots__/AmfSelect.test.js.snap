@@ -3,123 +3,156 @@
 exports[`AmfSelect with custom selector 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with empty validation object 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with empty value 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -141,334 +174,363 @@ exports[`AmfSelect with empty value 1`] = `
 exports[`AmfSelect with horizontal layout 1`] = `
 <View>
   <View
+    style={undefined}
+  >
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
+  </View>
+  <View
     style={
       Object {
-        "alignItems": "center",
-        "flexDirection": "row",
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
       }
     }
-  >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
-  </View>
+  />
 </View>
 `;
 
 exports[`AmfSelect with label 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
+    <RCTPicker
+      items={
         Array [
           Object {
-            "color": "#454545",
-            "marginRight": 16,
+            "label": "Label",
+            "textColor": undefined,
+            "value": undefined,
           },
           Object {
-            "marginBottom": 8,
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
           },
         ]
       }
-    >
-      Label
-    </Text>
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with label 2`] = `
 <View>
   <View
-    style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-      }
-    }
+    style={undefined}
   >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
+    <RCTPicker
+      items={
         Array [
           Object {
-            "color": "#454545",
-            "marginRight": 16,
+            "label": "Label",
+            "textColor": undefined,
+            "value": undefined,
           },
           Object {
-            "marginBottom": 0,
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
           },
         ]
       }
-    >
-      Label
-    </Text>
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with required validation 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with required validation 2`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={1}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect with unmatch value 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;
 
 exports[`AmfSelect without validation 1`] = `
 <View>
   <View
-    style={Object {}}
+    style={undefined}
   >
-    <View
-      style={undefined}
-    >
-      <RCTPicker
-        items={
-          Array [
-            Object {
-              "label": "foo",
-              "textColor": undefined,
-              "value": "foo",
-            },
-            Object {
-              "label": "bar",
-              "textColor": undefined,
-              "value": "bar",
-            },
-          ]
-        }
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        selectedIndex={0}
-        style={
-          Array [
-            Object {
-              "height": 216,
-            },
-            undefined,
-          ]
-        }
-      />
-    </View>
+    <RCTPicker
+      items={
+        Array [
+          Object {
+            "label": undefined,
+            "textColor": undefined,
+            "value": undefined,
+          },
+          Object {
+            "label": "foo",
+            "textColor": undefined,
+            "value": "foo",
+          },
+          Object {
+            "label": "bar",
+            "textColor": undefined,
+            "value": "bar",
+          },
+        ]
+      }
+      onChange={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      selectedIndex={0}
+      style={
+        Array [
+          Object {
+            "height": 216,
+          },
+          undefined,
+        ]
+      }
+    />
   </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#4b6ac5",
+        "borderColor": "#4b6ac5",
+        "borderStyle": "solid",
+        "height": 3,
+      }
+    }
+  />
 </View>
 `;

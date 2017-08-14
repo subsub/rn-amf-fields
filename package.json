@@ -41,6 +41,7 @@
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-jest": "20.0.3",
+    "babel-eslint": "^7.2.3",
     "babel-preset-react-native": "2.1.0",
     "d3-scale-chromatic": "^1.1.1",
     "eslint": "^4.4.1",
@@ -58,14 +59,12 @@
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+		"modulePathIgnorePatterns": ["/examples/"]
   },
   "babel": {
     "presets": [
       "react-native"
     ]
-  },
-  "dependencies": {
-    "babel-eslint": "^7.2.3"
   }
 }
