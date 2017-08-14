@@ -63,39 +63,39 @@ class AmfSelect extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
-	onChange = (val) => this.props.onChange(val)
+ onChange = (val) => this.props.onChange(val)
 
-  render() {
-    const { layout, value, label, options } = this.props
+ render() {
+   const { layout, value, label, options } = this.props
 
-		const { onChange } = this.props;
+   const { onChange } = this.props
 
-    let validationStyle = {}
-    let validationText
+   let validationStyle = {}
+   let validationText
     
-    if (!this.state.valid) {
-      validationStyle = {borderColor: 'red', borderWidth: 1}
-      validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
-    }
+   if (!this.state.valid) {
+     validationStyle = {borderColor: 'red', borderWidth: 1}
+     validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
+   }
 
-    let labelText
-    if (this.props.label) {
-      labelText = <Text style={[style.label, {marginBottom: layout == 'vertical' ? 8 : 0}]}>{this.props.label}</Text>
-    }
+   let labelText
+   if (this.props.label) {
+     labelText = <Text style={[style.label, {marginBottom: layout == 'vertical' ? 8 : 0}]}>{this.props.label}</Text>
+   }
 
-    return (
-      <View>
-        <Dropdown
-          label={label}
-          data={options}
+   return (
+     <View>
+       <Dropdown
+         label={label}
+         data={options}
 			    value={value || ''}
-          onChangeText={onChange}
-          error=""
+         onChangeText={onChange}
+         error=""
 			  />
-        { validationText }
-      </View>
-    )
-  }
+       { validationText }
+     </View>
+   )
+ }
 }
 
 const style = StyleSheet.create({

@@ -39,7 +39,7 @@ test('AmfSelectNested with label', () => {
 
 test('AmfSelectNested with unmatch value', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange, validation,
     value: 'No Match'
   }
@@ -52,7 +52,7 @@ test('AmfSelectNested with unmatch value', () => {
 
 test('AmfSelectNested with empty value', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange, validation,
     value: ''
   }
@@ -65,7 +65,7 @@ test('AmfSelectNested with empty value', () => {
 
 test('AmfSelectNested with empty validation object', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange,
     validation: {}
   }
@@ -78,7 +78,7 @@ test('AmfSelectNested with empty validation object', () => {
 
 test('AmfSelectNested test onChange function', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange
   }
 
@@ -90,7 +90,7 @@ test('AmfSelectNested test onChange function', () => {
 
 test('AmfSelectNested, test willHide event', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange
   }
 
@@ -103,7 +103,7 @@ test('AmfSelectNested, test willHide event', () => {
 
 test('AmfSelectNested, test willShow event', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange
   }
   let propsWithValidation = {
@@ -124,7 +124,7 @@ test('AmfSelectNested, test willShow event', () => {
 
 test('AmfSelectNested, test didUpdate event', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange
   }
 
@@ -143,7 +143,7 @@ test('AmfSelectNested, test didUpdate event', () => {
 
 test.skip('AmfSelectNested, test new options', () => {
   let props = {
-		label: 'Label',
+    label: 'Label',
     options, onChange
   }
   let newItem = [{
