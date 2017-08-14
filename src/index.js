@@ -12,12 +12,12 @@ import numeral from 'numeral'
  */
 
 if (!numeral.locales.id) {
-	numeral.register('locale', 'id', {
-		delimiters: { thousands : '.', decimal : ',' },
-		abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
-		ordinal : i => '',
-		currency: { symbol: 'Rp' }
-	})
+  numeral.register('locale', 'id', {
+    delimiters: { thousands : '.', decimal : ',' },
+    abbreviations: { thousand: 'k', million: 'm', billion: 'b', trillion: 't' },
+    ordinal : i => '',
+    currency: { symbol: 'Rp' }
+  })
 }
 
 numeral.locale('id')

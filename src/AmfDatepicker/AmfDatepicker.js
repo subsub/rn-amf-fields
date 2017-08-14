@@ -15,7 +15,7 @@ class AmfDatepicker extends Component {
 
   async openDatepicker(currentDate) {
 
-		const { onChange } = this.props;
+    const { onChange } = this.props
 
     try {
       let options = {
@@ -25,7 +25,7 @@ class AmfDatepicker extends Component {
 
       if (action !== DatePickerAndroid.dismissedAction) {
         let formattedDate = moment({y: year, M: month, d: day}).format('YYYY-MM-DD')
-				console.log(formattedDate);
+        console.log(formattedDate)
         onChange(formattedDate)
       } else {
         onChange('')
@@ -72,7 +72,7 @@ class AmfDatepicker extends Component {
 
   render() {
 
-		const { value } = this.props;
+    const { value } = this.props
     let dateFormatted
     if (value) dateFormatted = moment(value, 'YYYY-MM-DD').format('DD/MMM/YYYY')
     else dateFormatted = 'Pilih Tgl'
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   container : {
     flexDirection: 'row',
     alignItems: 'center',
-		justifyContent: 'space-between'
+    justifyContent: 'space-between'
   },
   calendarButton: {
     backgroundColor: 'white',

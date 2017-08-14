@@ -10,5 +10,5 @@ export default {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string,
-	options: PropTypes.arrayOf(itemShape),
+  options: PropTypes.arrayOf(itemShape),
 }

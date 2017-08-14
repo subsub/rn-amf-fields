@@ -10,30 +10,30 @@ import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
 const switcher = {
-	'text': AmfTextInput,
-	'number': AmfNumberInput,
-	'formatted-number': AmfFormattedNumberInput,
-	'select': AmfSelect,
-	'radio' : AmfRadioButton,
-	'datepicker': AmfDatepicker,
-	'date': AmfDateInput,
+  'text': AmfTextInput,
+  'number': AmfNumberInput,
+  'formatted-number': AmfFormattedNumberInput,
+  'select': AmfSelect,
+  'radio' : AmfRadioButton,
+  'datepicker': AmfDatepicker,
+  'date': AmfDateInput,
 }
 
 class AmfField extends Component {
 
-	constructor(props) {
-		super(props);
-	}
+  constructor(props) {
+    super(props)
+  }
 
-	render() {
-		const { type, label, onChange, value, options  } = this.props;
-		if (type in switcher) {
-			const Component = switcher[type];
-			return <Component type={type} label={label} onChange={onChange} value={value} options={options} />
-		} else {
-			throw new TypeError ('Unknown type Field "' + type + '" in AmfField');
-		}
-	}
+  render() {
+    const { type, label, onChange, value, options  } = this.props
+    if (type in switcher) {
+      const Component = switcher[type]
+      return <Component type={type} label={label} onChange={onChange} value={value} options={options} />
+    } else {
+      throw new TypeError ('Unknown type Field "' + type + '" in AmfField')
+    }
+  }
 }
 
 

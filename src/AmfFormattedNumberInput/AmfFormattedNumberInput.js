@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, TextInput, Text, View } from 'react-native'
-import { TextField } from 'react-native-material-textfield';
+import { TextField } from 'react-native-material-textfield'
 import numeral from 'numeral'
 
 
@@ -53,7 +53,7 @@ class AmfNumberInput extends Component {
     let textInputValidationStyle = {}
     let validationText
 
-    const { label, value } = this.props;
+    const { label, value } = this.props
 
     if (!this.state.valid) {
       textInputValidationStyle = { borderColor: 'red' }
@@ -61,20 +61,20 @@ class AmfNumberInput extends Component {
     }
 
     let shownValue = value && numeral(value).format()
-		if (value === 0) {
-			shownValue = '0'
-		}
+    if (value === 0) {
+      shownValue = '0'
+    }
 
     return (
       <View>
-      <TextField
-        label={label}
-        onChangeText={this.onChangeText}
-        keyboardType="numeric"
-        returnKeyType="next"
-        value={shownValue || ''}
-      />
-      { validationText }
+        <TextField
+          label={label}
+          onChangeText={this.onChangeText}
+          keyboardType="numeric"
+          returnKeyType="next"
+          value={shownValue || ''}
+        />
+        { validationText }
       </View>
     )
   }

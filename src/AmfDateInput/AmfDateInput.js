@@ -8,13 +8,13 @@ class AmfDateInput extends Component {
   constructor(props) {
     super(props)
 		
-		let year = month =  day = errorMessage = '', valid = false;
+    let year = month =  day = errorMessage = '', valid = false
 
     if (this.props.value) {
-			[year, month, day] = this.props.value.split('-');
+      [year, month, day] = this.props.value.split('-')
     }
 
-		this.state = { valid, errorMessage, year, month, day }
+    this.state = { valid, errorMessage, year, month, day }
   }
 
   componentDidMount() {
@@ -35,14 +35,14 @@ class AmfDateInput extends Component {
 
     this.setState({ day, month, year })
 
-    if (day == '' || month == '' || year == '') return;
+    if (day == '' || month == '' || year == '') return
 
-		let date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
+    let date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
 
-		while (date == 'Invalid date') {
-			day = (parseInt(day)-1).padStart(2, '0')
-			date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
-		}
+    while (date == 'Invalid date') {
+      day = (parseInt(day)-1).padStart(2, '0')
+      date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
+    }
 
     return this.props.onChange(date)
   }
@@ -68,7 +68,7 @@ class AmfDateInput extends Component {
   }
 
   render() {
-		const {year, month, day} = this.state;
+    const {year, month, day} = this.state
 
     let validationStyle = {}
     let validationText
@@ -77,25 +77,25 @@ class AmfDateInput extends Component {
       validationText = <Text style={style.errorText}>{this.state.errorMessage}</Text>
     }
 
-		const updateValue = this.updateValue;
+    const updateValue = this.updateValue
 
     return (
       <View style={{flexDirection:'row', alignItems: 'center'}}>
 
-          <Text style={style.label}>{this.props.label}</Text>
-          <View style={[style.pickerContainer, validationStyle]}>
-						<Picker mode='dropdown' onValueChange={val => updateValue('day', val)} selectedValue={day} style={{width:58}}>
-							{ days.map(i => <Picker.Item key={'d' + i} value={i} label={i} />) }
-						</Picker>
-            <Text style={style.dividerText}>/</Text>
+        <Text style={style.label}>{this.props.label}</Text>
+        <View style={[style.pickerContainer, validationStyle]}>
+          <Picker mode='dropdown' onValueChange={val => updateValue('day', val)} selectedValue={day} style={{width:58}}>
+            { days.map(i => <Picker.Item key={'d' + i} value={i} label={i} />) }
+          </Picker>
+          <Text style={style.dividerText}>/</Text>
 
-						<Picker mode='dropdown' onValueChange={val => updateValue('month', val)} selectedValue={month} style={{width:70}}>
-							{ months.map(i => <Picker.Item key={'m' + i} value={i} label={i} />) }
-						</Picker>
-            <Text style={style.dividerText}>/</Text>
-						<Picker mode='dropdown' onValueChange={val => updateValue('year', val)} selectedValue={year} style={{width:80}}>
-							{ years.map(i => <Picker.Item key={'y' + i} value={i} label={i} />) }
-						</Picker>
+          <Picker mode='dropdown' onValueChange={val => updateValue('month', val)} selectedValue={month} style={{width:70}}>
+            { months.map(i => <Picker.Item key={'m' + i} value={i} label={i} />) }
+          </Picker>
+          <Text style={style.dividerText}>/</Text>
+          <Picker mode='dropdown' onValueChange={val => updateValue('year', val)} selectedValue={year} style={{width:80}}>
+            { years.map(i => <Picker.Item key={'y' + i} value={i} label={i} />) }
+          </Picker>
 
         </View>
         { validationText }
@@ -110,7 +110,7 @@ const days   = [ '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11
 
 let yearsConst = []
 for (let i=1940; i< new Date().getFullYear() - 18; i++) { yearsConst.push(String(i)) }
-const years = yearsConst;
+const years = yearsConst
 
 
 const style = StyleSheet.create({

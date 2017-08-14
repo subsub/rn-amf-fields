@@ -23,34 +23,34 @@ class AmfRadioButton extends Component {
       <View>
         <Text style={style.label}>{this.props.label}</Text>
         <RadioForm formHorizontal={true} >
-					{ options.map( (option, i) => (
-					<RadioButton labelHorizontal={true} key={i} >
-						{/*  You can set RadioButtonLabel before RadioButtonInput */}
-						<RadioButtonInput
-							obj={option}
-							index={i}
-							isSelected={option.value === value}
-							onPress={onChange}
-							borderWidth={1}
-							buttonInnerColor={'#009688'}
-							buttonOuterColor={option.value === value ? '#009688' : '#000000' }
-							buttonSize={16}
-							buttonOuterSize={24}
-							buttonStyle={{}}
-							buttonWrapStyle={{marginLeft: 10}}
-						/>
-						<RadioButtonLabel
-							obj={option}
-							index={i}
-							labelHorizontal={true}
-							onPress={onChange}
-							labelStyle={{}}
-							labelWrapStyle={{}}
-						/>
-					</RadioButton>
-					))}
+          { options.map( (option, i) => (
+            <RadioButton labelHorizontal={true} key={i} >
+              {/*  You can set RadioButtonLabel before RadioButtonInput */}
+              <RadioButtonInput
+                obj={option}
+                index={i}
+                isSelected={option.value === value}
+                onPress={onChange}
+                borderWidth={1}
+                buttonInnerColor={'#009688'}
+                buttonOuterColor={option.value === value ? '#009688' : '#000000' }
+                buttonSize={16}
+                buttonOuterSize={24}
+                buttonStyle={{}}
+                buttonWrapStyle={{marginLeft: 10}}
+              />
+              <RadioButtonLabel
+                obj={option}
+                index={i}
+                labelHorizontal={true}
+                onPress={onChange}
+                labelStyle={{}}
+                labelWrapStyle={{}}
+              />
+            </RadioButton>
+          ))}
 
-				</RadioForm>
+        </RadioForm>
         { validationText }
       </View>
     )

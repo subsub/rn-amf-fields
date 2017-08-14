@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
-import { TextField } from 'react-native-material-textfield';
+import { TextField } from 'react-native-material-textfield'
 
 class AmfTextInput extends Component {
   constructor(props) {
@@ -70,7 +70,7 @@ class AmfTextInput extends Component {
     let textInputValidationStyle = {}
     let validationText
 
-		const { label, onChange, value } = this.props;
+    const { label, onChange, value } = this.props
     
     if (!this.state.valid) {
       textInputValidationStyle = { borderColor: 'red' }
@@ -79,14 +79,14 @@ class AmfTextInput extends Component {
 
     return (
       <View>
-				<TextField
-					label={label}
-					onChangeText={onChange}
-					keyboardType="default"
+        <TextField
+          label={label}
+          onChangeText={onChange}
+          keyboardType="default"
 			    returnKeyType="next"
-					options={{}}
-					value={value || ""}
-				/>
+          options={{}}
+          value={value || ''}
+        />
 			  { validationText }
       </View>
     )
@@ -116,6 +116,6 @@ const style = StyleSheet.create({
   }
 })
 
-AmfTextInput.propTypes = fieldPropTypes;
+AmfTextInput.propTypes = fieldPropTypes
 
 export default AmfTextInput
