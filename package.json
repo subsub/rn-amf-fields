@@ -1,6 +1,6 @@
 {
   "name": "rn-amf-fields",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Fields that use in react-native with standared styles",
   "main": "index.js",
   "scripts": {
@@ -60,7 +60,9 @@
   },
   "jest": {
     "preset": "react-native",
-		"modulePathIgnorePatterns": ["/examples/"]
+    "modulePathIgnorePatterns": [
+      "/examples/"
+    ]
   },
   "babel": {
     "presets": [
