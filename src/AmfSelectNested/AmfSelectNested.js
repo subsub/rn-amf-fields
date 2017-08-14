@@ -63,37 +63,37 @@ class AmfSelectNested extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
-	onChangeParent = (val) => {
-		this.setState({value1: val})
-	}
+ onChangeParent = (val) => {
+   this.setState({value1: val})
+ }
 
-  render() {
-    const { layout, value, label, options, onChange } = this.props
-		const [ label1, label2 ] = label.split('|')
-		const options1 = options.map((option, i) => ({ ...option, value:option.label}))
-		const { value1 } = this.state
-		const value1Options = options.find(option => option.label == value1);
-		const options2 = value1Options ? value1Options.value : []
+ render() {
+   const { layout, value, label, options, onChange } = this.props
+   const [ label1, label2 ] = label.split('|')
+   const options1 = options.map((option, i) => ({ ...option, value:option.label}))
+   const { value1 } = this.state
+   const value1Options = options.find(option => option.label == value1)
+   const options2 = value1Options ? value1Options.value : []
 
-    return (
-      <View>
-				<Dropdown
-					label={label1}
-					data={options1}
-			    value={value1 || ""}
-					onChangeText={this.onChangeParent}
-					error=""
+   return (
+     <View>
+       <Dropdown
+         label={label1}
+         data={options1}
+			    value={value1 || ''}
+         onChangeText={this.onChangeParent}
+         error=""
 			  />
-				<Dropdown
-					label={label2}
-					data={options2}
-			    value={value || ""}
-					onChangeText={onChange}
-					error=""
+       <Dropdown
+         label={label2}
+         data={options2}
+			    value={value || ''}
+         onChangeText={onChange}
+         error=""
 			  />
-      </View>
-    )
-  }
+     </View>
+   )
+ }
 }
 
 const style = StyleSheet.create({

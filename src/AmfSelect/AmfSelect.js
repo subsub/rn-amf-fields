@@ -81,12 +81,12 @@ class AmfSelect extends Component {
 
     return (
       <View>
-				<Dropdown
-					label={label}
-					data={options}
-			    value={value || ""}
-					onChangeText={onChange}
-					error=""
+        <Dropdown
+          label={label}
+          data={options}
+			    value={value || ''}
+          onChangeText={onChange}
+          error=""
 			  />
         { validationText }
       </View>
