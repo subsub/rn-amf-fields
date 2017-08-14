@@ -1,6 +1,11 @@
 # vim
 *.swp
 
+# examples
+examples/**/android/*
+examples/**/ios/*
+
+
 # Logs
 logs
 *.log
