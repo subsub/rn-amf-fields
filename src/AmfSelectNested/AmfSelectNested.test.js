@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text } from 'react-native'
-import AmfSelect from './AmfSelect'
+import AmfSelectNested from './AmfSelectNested'
 import renderer from 'react-test-renderer'
 
 let options = [{
@@ -15,21 +15,21 @@ let validation = {
   required: true
 }
 
-test('AmfSelect without validation', () => {
-  let props = { options, onChange }
+test('AmfSelectNested simple render', () => {
+  let props = { label:'\r', options, onChange }
 
-  const component = renderer.create(<AmfSelect {...props} />)
+  const component = renderer.create(<AmfSelectNested {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfSelect with label', () => {
+test('AmfSelectNested with label', () => {
   let props = { options, onChange, label: 'Label' }
   let propsHorizontal = { ...props, layout: 'horizontal' }
 
-  const component = renderer.create(<AmfSelect {...props} />)
-  const componentHorizontal = renderer.create(<AmfSelect {...propsHorizontal} />)
+  const component = renderer.create(<AmfSelectNested {...props} />)
+  const componentHorizontal = renderer.create(<AmfSelectNested {...propsHorizontal} />)
   
   let tree = component.toJSON()
   let treeHorizontal = componentHorizontal.toJSON()
@@ -37,119 +37,84 @@ test('AmfSelect with label', () => {
   expect(treeHorizontal).toMatchSnapshot()
 })
 
-test('AmfSelect with custom selector', () => {
+test('AmfSelectNested with unmatch value', () => {
   let props = {
-    options, onChange,
-    selector: <Text>Custom Selector</Text>
-  }
-
-  const component = renderer.create(<AmfSelect {...props} />)
-  
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-})
-
-test('AmfSelect with horizontal layout', () => {
-  let props = {
-    options, onChange,
-    layout: 'horizontal'
-  }
-
-  const component = renderer.create(<AmfSelect {...props} />)
-  
-  let tree = component.toJSON()
-  expect(tree).toMatchSnapshot()
-})
-
-test('AmfSelect with required validation', () => {
-  let props = {
-    options, onChange, validation
-  }
-  let propsWithValue = {
-    ...props, value: 'foo'
-  }
-
-  const component = renderer.create(<AmfSelect {...props} />)
-  const componentWithValue = renderer.create(<AmfSelect {...propsWithValue} />)
-  
-  let tree = component.toJSON()
-  let treeWithValue = componentWithValue.toJSON()
-  expect(tree).toMatchSnapshot()
-  expect(treeWithValue).toMatchSnapshot()
-})
-
-test('AmfSelect with unmatch value', () => {
-  let props = {
+		label: 'Label',
     options, onChange, validation,
     value: 'No Match'
   }
 
-  const component = renderer.create(<AmfSelect {...props} />)
+  const component = renderer.create(<AmfSelectNested {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfSelect with empty value', () => {
+test('AmfSelectNested with empty value', () => {
   let props = {
+		label: 'Label',
     options, onChange, validation,
     value: ''
   }
 
-  const component = renderer.create(<AmfSelect {...props} />)
+  const component = renderer.create(<AmfSelectNested {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfSelect with empty validation object', () => {
+test('AmfSelectNested with empty validation object', () => {
   let props = {
+		label: 'Label',
     options, onChange,
     validation: {}
   }
 
-  const component = renderer.create(<AmfSelect {...props} />)
+  const component = renderer.create(<AmfSelectNested {...props} />)
   
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfSelect test onChange function', () => {
+test('AmfSelectNested test onChange function', () => {
   let props = {
+		label: 'Label',
     options, onChange
   }
 
-  const component = new AmfSelect(props)
-  component.onSelect(0, 'value')
+  const component = new AmfSelectNested(props)
+  component.onChange(0, 'value')
   
   expect(props.onChange).toHaveBeenCalled()
 })
 
-test('AmfSelect, test willHide event', () => {
+test('AmfSelectNested, test willHide event', () => {
   let props = {
+		label: 'Label',
     options, onChange
   }
 
-  const component = new AmfSelect(props)
+  const component = new AmfSelectNested(props)
   component.setState = jest.fn()
   component.onSelectWillHide()
   
   expect(component.setState).toHaveBeenCalled()
 })
 
-test('AmfSelect, test willShow event', () => {
+test('AmfSelectNested, test willShow event', () => {
   let props = {
+		label: 'Label',
     options, onChange
   }
   let propsWithValidation = {
     ...props, validation, value: null
   }
 
-  const component = new AmfSelect(props)
+  const component = new AmfSelectNested(props)
   component.setState = jest.fn()
   component.onSelectWillShow()
 
-  const componentWithValidation = new AmfSelect(propsWithValidation)
+  const componentWithValidation = new AmfSelectNested(propsWithValidation)
   componentWithValidation.setState = jest.fn()
   componentWithValidation.onSelectWillShow()
 
@@ -157,26 +122,28 @@ test('AmfSelect, test willShow event', () => {
   expect(propsWithValidation.onChange).toHaveBeenCalled()
 })
 
-test('AmfSelect, test didUpdate event', () => {
+test('AmfSelectNested, test didUpdate event', () => {
   let props = {
+		label: 'Label',
     options, onChange
   }
 
-  const component = new AmfSelect(props)
+  const component = new AmfSelectNested(props)
   component.state = {isFocused: false}
   component.validate = jest.fn()
   component.componentDidUpdate({}, {isFocused: true})
   expect(component.validate).toHaveBeenCalled()
 
-  const componentFocused = new AmfSelect(props)
+  const componentFocused = new AmfSelectNested(props)
   componentFocused.state = {isFocused: true}
   componentFocused.validate = jest.fn()
   componentFocused.componentDidUpdate({}, {isFocused: false})
   expect(componentFocused.validate).not.toHaveBeenCalled()
 })
 
-test.skip('AmfSelect, test new options', () => {
+test.skip('AmfSelectNested, test new options', () => {
   let props = {
+		label: 'Label',
     options, onChange
   }
   let newItem = [{
@@ -185,7 +152,7 @@ test.skip('AmfSelect, test new options', () => {
   }]
   let expected = newItem.map(i => i.label)
 
-  const component = new AmfSelect(props)
+  const component = new AmfSelectNested(props)
   component.componentWillReceiveProps({options: newItem})
 
   expect(component.options).toEqual(expected)

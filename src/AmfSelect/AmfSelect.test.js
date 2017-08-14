@@ -120,7 +120,7 @@ test('AmfSelect test onChange function', () => {
   }
 
   const component = new AmfSelect(props)
-  component.onSelect(0, 'value')
+  component.onChange(0, 'value')
   
   expect(props.onChange).toHaveBeenCalled()
 })

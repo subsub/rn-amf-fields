@@ -63,8 +63,12 @@ class AmfSelect extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
+	onChange = (val) => this.props.onChange(val)
+
   render() {
-    const { layout, value, label, options, onChange } = this.props
+    const { layout, value, label, options } = this.props
+
+		const { onChange } = this.props;
 
     let validationStyle = {}
     let validationText
