@@ -20,13 +20,13 @@ class AmfSelect extends Component {
 			 value={value || ''}
 			 onChangeText={onChange}
 			 error={error}
-		   animationDuration="128"
+		   animationDuration={128}
 			/>
    )
  }
 }
 
-AmfNumberInput.propTypes = {
+AmfSelect.propTypes = {
 	...fieldPropTypes,
 	value : PropTypes.string
 }

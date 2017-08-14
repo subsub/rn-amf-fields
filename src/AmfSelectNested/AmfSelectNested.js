@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { StyleSheet, Text, View, Picker } from 'react-native'
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import fieldPropTypes from '../fieldPropTypes'
+import { View } from 'react-native'
 import { Dropdown } from 'react-native-material-dropdown'
 
 class AmfSelectNested extends Component {
@@ -84,7 +84,7 @@ class AmfSelectNested extends Component {
  onChange = (val) => this.props.onChange(val)
 
  render() {
-   const { layout, value, label, options } = this.props
+   const { label, value, options, error } = this.props
 
    // for props with type use proxy function
    const { onChange, onChangeParent } = this
@@ -102,84 +102,37 @@ class AmfSelectNested extends Component {
          data={options1}
          value={value1 || ''}
          onChangeText={onChangeParent}
-         error=""
+         error={error}
+				 animationDuration={128}
        />
        <Dropdown
          label={label2}
          data={options2}
          value={value || ''}
          onChangeText={onChange}
-         error=""
+         error={error}
+				 animationDuration={128}
        />
      </View>
    )
  }
 }
 
-const style = StyleSheet.create({
-  container: {},
-  containerHorizontal: {
-    flexDirection: 'row',
-    alignItems: 'center'
-  },
-  dropdownContainer: {
-    elevation: 4,
-    borderRadius: 25,
-    borderWidth: 1,
-    borderColor: 'transparent',
-    backgroundColor: 'white',
-    justifyContent: 'center'
-  },
-  dropdown: {
-    width: 100,
-    elevation: 4,
-    padding: 8,
-    height: 150
-  },
-  errorText: {
-    color: 'red',
-    margin: 4,
-    marginBottom: 0
-  },
-  label: {
-    color: '#454545',
-    marginRight: 16
-  },
-  option: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: 30
-  },
-  icon: {
-    marginRight: 16
-  },
-  valueText: {
-    marginLeft: 16
-  }
-})
 
-const itemShape = PropTypes.shape({
+const childItem = PropTypes.shape({
   label: PropTypes.string.isRequired,
   value: PropTypes.any.isRequired
 })
 
-AmfSelectNested.defaultProps = {
-  layout: 'vertical'
-}
+const parentItem = PropTypes.shape({
+  label: PropTypes.string.isRequired,
+  value: PropTypes.arrayOf(childItem).isRequired
+})
 
 AmfSelectNested.propTypes = {
-  disabled: PropTypes.bool,
-  dropdownStyle: PropTypes.object,
-  options: PropTypes.arrayOf(itemShape).isRequired,
-  label: PropTypes.string,
-  layout: PropTypes.oneOf(['vertical', 'horizontal']),
-  onChange: PropTypes.func.isRequired,
-  optionStyle: PropTypes.object,
-  selector: PropTypes.element,
-  style: PropTypes.object,
-  validation: PropTypes.object,
-  value: PropTypes.any,
+	...fieldPropTypes,
+	option : PropTypes.arrayOf(parentItem),
+	value : PropTypes.string
 }
 
 export default AmfSelectNested

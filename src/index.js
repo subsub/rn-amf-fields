@@ -4,6 +4,8 @@ import AmfSelect from './AmfSelect/AmfSelect'
 import AmfDatepicker from './AmfDatepicker/AmfDatepicker'
 import AmfDateInput from './AmfDateInput/AmfDateInput'
 import AmfField from './AmfField/AmfField'
+
+import AmfTable from './AmfTable/AmfTable'
 import numeral from 'numeral'
 
 /**
@@ -22,4 +24,4 @@ if (!numeral.locales.id) {
 
 numeral.locale('id')
 
-export { AmfTextInput, AmfNumberInput, AmfSelect, AmfDatepicker, AmfDateInput, AmfField }
+export { AmfTextInput, AmfNumberInput, AmfSelect, AmfDatepicker, AmfDateInput, AmfField, AmfTable }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { TextField } from 'react-native-material-textfield'
+import fieldPropTypes from '../fieldPropTypes'
 import numeral from 'numeral'
-
 
 class AmfFormattedNumberInput extends Component {
 
@@ -11,6 +11,8 @@ class AmfFormattedNumberInput extends Component {
   render() {
 
     const { label, value, error } = this.props
+
+		const { onChange } = this;
 
     let shownValue = value && numeral(value).format()
 
@@ -22,7 +24,7 @@ class AmfFormattedNumberInput extends Component {
     return (
 			<TextField
 				label={label}
-				onChangeText={this.onChangeText}
+				onChangeText={onChange}
 				keyboardType="numeric"
 				returnKeyType="next"
 				value={shownValue || ''}
@@ -31,7 +33,6 @@ class AmfFormattedNumberInput extends Component {
     )
   }
 }
-
 
 AmfFormattedNumberInput.propTypes = {
 	...fieldPropTypes,

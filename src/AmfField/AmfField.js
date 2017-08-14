@@ -6,6 +6,7 @@ import AmfRadioButton from '../AmfRadioButton/AmfRadioButton'
 import AmfDatepicker from '../AmfDatepicker/AmfDatepicker'
 import AmfDateInput from '../AmfDateInput/AmfDateInput'
 import AmfSelect from '../AmfSelect/AmfSelect'
+import AmfSelectNested from '../AmfSelectNested/AmfSelectNested'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
@@ -14,6 +15,7 @@ const switcher = {
   'number': AmfNumberInput,
   'formatted-number': AmfFormattedNumberInput,
   'select': AmfSelect,
+  'select-nested': AmfSelectNested,
   'radio' : AmfRadioButton,
   'datepicker': AmfDatepicker,
   'date': AmfDateInput,
