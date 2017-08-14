@@ -23,6 +23,7 @@ export default class simple extends Component {
 			number : null,
 			formattedNumber : null,
 			select: null,
+			selectNested: null,
 			radio: null,
 			radio2: null,
 			datepicker: null,
@@ -41,6 +42,7 @@ export default class simple extends Component {
 			number,
 			formattedNumber,
 			select,
+			selectNested,
 			radio,
 			radio2, 
 			datepicker,
@@ -81,6 +83,26 @@ export default class simple extends Component {
 						{label: "label3", value: "value3" },
 						{label: "label4", value: "value4" }
 					
+					]}
+				/>
+
+				<AmfField type="select-nested"             
+					label="selectNestedParent|selectNestedChild" 
+					onChange={cc('selectNested')}            
+					value={selectNested}
+					options={[
+						{label: "parent1", value: [  
+							{ label: "parent1child1" , value:"11"},
+							{ label: "parent1child2" , value:"12"},
+							{ label: "parent1child3" , value:"13"},
+							{ label: "parent1child4" , value:"14"}
+						]},
+						{label: "parent2", value: [, 
+							{ label: "parent2child1" , value:"21"},
+							{ label: "parent2child2" , value:"22"},
+							{ label: "parent2child3" , value:"23"},
+							{ label: "parent2child4" , value:"24"}
+						]}
 					]}
 				/>
 

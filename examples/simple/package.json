@@ -1,22 +1,39 @@
 {
-	"name": "simple",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.47.1"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.1.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "simple",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+		"babel-eslint":"7.2.3",
+		"babel-jest":"20.0.3",
+		"babel-preset-react-native":"2.1.0",
+		"d3-scale-chromatic":"1.1.1",
+		"jest":"20.0.4",
+		"moment":"2.18.1",
+		"numeral":"2.0.6",
+		"react":"16.0.0-alpha.12",
+		"react-native":"0.46.2",
+		"react-native-material-textfield":"egon12/react-native-material-textfield.git",
+		"react-native-material-dropdown":"0.2.0",
+		"react-native-simple-radio-button":"2.6.0",
+		"react-native-vector-icons":"4.3.0",
+		"react-test-renderer":"16.0.0-alpha.12",
+		"rn-amf-fields":"1.0.14"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "description": "Examples for rn-amf-fields",
+  "main": "index.android.js",
+  "author": "",
+  "license": "MIT"
 }
