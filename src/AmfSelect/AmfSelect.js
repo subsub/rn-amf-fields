@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, Text, View, Picker } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import { Dropdown } from 'react-native-material-dropdown'
 
 class AmfSelect extends Component {
   constructor(props) {
@@ -57,17 +58,13 @@ class AmfSelect extends Component {
     this.setState({isFocused: false})
   }
 
-  onSelect = (value) => {
-    this.props.onChange(value)
-  }
-
   validate = () => {
     let validationObject = this.inputValid()
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
   render() {
-    const { layout, value, label } = this.props
+    const { layout, value, label, options, onChange } = this.props
 
     let validationStyle = {}
     let validationText
@@ -84,11 +81,13 @@ class AmfSelect extends Component {
 
     return (
       <View>
-        <Picker selectedValue={value} onValueChange={this.onSelect} >
-          <Picker.Item label={label} />
-          { this.props.options.map((option, index) => <Picker.Item key={index} {...option} />) }
-        </Picker>
-        <View style={{backgroundColor:'#4b6ac5', borderColor:'#4b6ac5', borderStyle:'solid', height:3}} />
+				<Dropdown
+					label={label}
+					data={options}
+			    value={value || ""}
+					onChangeText={onChange}
+					error=""
+			  />
         { validationText }
       </View>
     )
