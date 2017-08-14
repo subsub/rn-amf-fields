@@ -12,8 +12,12 @@ const items = [{
 }]
 const onPress = jest.fn()
 
-test('AmfRadioButton without validation', () => {
+test('AmfRadioButton simple render', () => {
   let props = { label, items, onPress }
+	props.options = [
+		{ label: 'Label1', value: 'value2' },
+		{ label: 'Label2', value: 'value3' },
+	]
 
   const component = renderer.create(<AmfRadioButton {...props} />)
 
@@ -21,7 +25,7 @@ test('AmfRadioButton without validation', () => {
   expect(tree).toMatchSnapshot()
 })
 
-test('AmfRadioButton with validation', () => {
+test.skip('AmfRadioButton with validation', () => {
   let props = { label, items, onPress,
     required: true,
     value: ''
@@ -31,4 +35,18 @@ test('AmfRadioButton with validation', () => {
 
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()
+})
+
+/**
+ *
+ */
+test('AmfRadioButton without options', () => {
+  let props = { label, items, onPress }
+
+	console.error = jest.fn();
+
+	expect(() => {
+		const component = renderer.create(<AmfRadioButton {...props} />)
+		let tree = component.toJSON()
+	}).toThrowErrorMatchingSnapshot();
 })

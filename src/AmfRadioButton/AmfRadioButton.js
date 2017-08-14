@@ -6,7 +6,21 @@ import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'reac
 class AmfRadioButton extends Component {
   constructor(props) {
     super(props)
+
+		this.checkError();
   }
+
+	checkError() {
+		const { label, options, value, onChange } = this.props;
+
+		if (!label) {
+			throw new TypeError('Label for AmfRadioButton not exists. Did you forget to add label');
+		}
+
+		if (!options) {
+			throw new TypeError('Field "' + label + '" (AmfRadioButton) doesnt have options');
+		}
+	}
 
   render() {
     const { label, options, value, onChange, required } = this.props
