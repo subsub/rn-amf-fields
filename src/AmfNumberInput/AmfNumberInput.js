@@ -113,7 +113,7 @@ AmfNumberInput.propTypes = {
   separator: PropTypes.string,
   style: TextInput.propTypes.style,
   unit: PropTypes.string,
-  value: PropTypes.number
+  value: PropTypes.string
 }
 
 export default AmfNumberInput
