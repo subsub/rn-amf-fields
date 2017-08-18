@@ -63,7 +63,7 @@ class AmfSelect extends Component {
     this.setState({valid: validationObject.status, errorMessage: validationObject.message})
   }
 
- onChange = (val) => this.props.onChange(val)
+ onChange = (val, index) => this.props.onChange(this.props.options[index].value)
 
  render() {
    const { layout, value, label, options } = this.props
@@ -83,16 +83,25 @@ class AmfSelect extends Component {
      labelText = <Text style={[style.label, {marginBottom: layout == 'vertical' ? 8 : 0}]}>{this.props.label}</Text>
    }
 
+   // adapt Amf options shape to dropdown shape
+   let dropdownData = options.map(i => ({
+     value: i.label,
+     realValue: i.value
+   }))
+   let dropdownValue = ''
+   let temp = options.find(i => i.value === value)
+   if (temp) dropdownValue = temp.label
+
    return (
      <View>
-       <Dropdown
-         label={label}
-         data={options}
-			    value={value || ''}
-         onChangeText={onChange}
-         error=""
-			  />
-       { validationText }
+      <Dropdown
+        label={label}
+        data={dropdownData}
+			  value={dropdownValue || ''}
+        onChangeText={onChange}
+        error=""
+			/>
+      { validationText }
      </View>
    )
  }
@@ -143,7 +152,7 @@ const style = StyleSheet.create({
 
 const itemShape = PropTypes.shape({
   label: PropTypes.string.isRequired,
-  value: PropTypes.any.isRequired
+  value: PropTypes.string.isRequired
 })
 
 AmfSelect.defaultProps = {

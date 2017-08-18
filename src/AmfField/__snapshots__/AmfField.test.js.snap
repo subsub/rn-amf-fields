@@ -381,20 +381,20 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
               data={
                 Array [
                   Object {
-                    "label": "Label 1",
-                    "value": "Satu",
+                    "realValue": "Satu",
+                    "value": "Label 1",
                   },
                   Object {
-                    "label": "Label 2",
-                    "value": "Dua",
+                    "realValue": "Dua",
+                    "value": "Label 2",
                   },
                   Object {
-                    "label": "Label 3",
-                    "value": "Tiga",
+                    "realValue": "Tiga",
+                    "value": "Label 3",
                   },
                   Object {
-                    "label": "Label 4",
-                    "value": "Empat",
+                    "realValue": "Empat",
+                    "value": "Label 4",
                   },
                 ]
               }
@@ -430,7 +430,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                 ]
               }
               underlineColorAndroid="transparent"
-              value="Satu"
+              value="Label 1"
             />
             <View
               style={
@@ -755,7 +755,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     ]
                   }
                 >
-                  Satu
+                  Label 1
                 </Text>
                 <View
                   collapsable={undefined}
@@ -856,7 +856,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     ]
                   }
                 >
-                  Dua
+                  Label 2
                 </Text>
                 <View
                   collapsable={undefined}
@@ -957,7 +957,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     ]
                   }
                 >
-                  Tiga
+                  Label 3
                 </Text>
                 <View
                   collapsable={undefined}
@@ -1058,7 +1058,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     ]
                   }
                 >
-                  Empat
+                  Label 4
                 </Text>
                 <View
                   collapsable={undefined}
