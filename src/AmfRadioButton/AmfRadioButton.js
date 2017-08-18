@@ -36,9 +36,9 @@ class AmfRadioButton extends Component {
     return (
       <View>
         <Text style={style.label}>{this.props.label}</Text>
-        <RadioForm formHorizontal={true} >
+        <RadioForm formHorizontal={this.props.layout === 'horizontal' } style={{alignItems: 'flex-start'}}>
           { options.map( (option, i) => (
-            <RadioButton labelHorizontal={true} key={i} >
+            <RadioButton labelHorizontal={true} key={i}>
               {/*  You can set RadioButtonLabel before RadioButtonInput */}
               <RadioButtonInput
                 obj={option}
@@ -116,6 +116,7 @@ const itemShape = PropTypes.shape({
 })
 
 AmfRadioButton.propTypes = {
+  layout: PropTypes.oneOf(['horizontal', 'vertical']),
   label: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(itemShape).isRequired,
   required: PropTypes.bool,

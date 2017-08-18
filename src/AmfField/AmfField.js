@@ -28,10 +28,11 @@ class AmfField extends Component {
   }
 
   render() {
-    const { type, label, onChange, value, options  } = this.props
+    const { type } = this.props
+    const props = this.props
     if (type in switcher) {
       const Component = switcher[type]
-      return <Component type={type} label={label} onChange={onChange} value={value} options={options} />
+      return <Component {...props} />
     } else {
       throw new TypeError ('Unknown type Field "' + type + '" in AmfField')
     }
