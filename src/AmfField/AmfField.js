@@ -39,6 +39,10 @@ class AmfField extends Component {
 }
 
 
-AmfField.propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired}
+AmfField.propTypes = {
+  ...fieldPropTypes,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.any
+}
 
 export default AmfField
