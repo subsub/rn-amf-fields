@@ -5,30 +5,30 @@ import { TextField } from 'react-native-material-textfield'
 
 class AmfNumberInput extends Component {
 
-	onChange = val => this.props.onChange(val)
+ onChange = val => this.props.onChange(val)
 
-  render() {
+ render() {
 
-    const { label, value, error } = this.props
+   const { label, value, error } = this.props
 
-		const { onChange } = this;
+   const { onChange } = this
 		
-    return (
-			<TextField
-				label={label}
-				onChangeText={onChange}
-				keyboardType="numeric"
-				returnKeyType="next"
-				value={value || ''}
-				error={error}
-			/>
-    )
-  }
+   return (
+     <TextField
+       label={label}
+       onChangeText={onChange}
+       keyboardType="numeric"
+       returnKeyType="next"
+       value={value || ''}
+       error={error}
+     />
+   )
+ }
 }
 
 AmfNumberInput.propTypes = {
-	...fieldPropTypes,
-	value : PropTypes.string
+  ...fieldPropTypes,
+  value : PropTypes.string
 }
 
 export default AmfNumberInput

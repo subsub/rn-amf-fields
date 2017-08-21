@@ -12,31 +12,31 @@ class AmfFormattedNumberInput extends Component {
 
     const { label, value, error } = this.props
 
-		const { onChange } = this;
+    const { onChange } = this
 
     let shownValue = value && numeral(value).format()
 
-		// handle if zero (can be fill with zero)
+    // handle if zero (can be fill with zero)
     if (value === 0) {
       shownValue = '0'
     }
 
     return (
-			<TextField
-				label={label}
-				onChangeText={onChange}
-				keyboardType="numeric"
-				returnKeyType="next"
-				value={shownValue || ''}
+      <TextField
+        label={label}
+        onChangeText={onChange}
+        keyboardType="numeric"
+        returnKeyType="next"
+        value={shownValue || ''}
 			  error={error}
-			/>
+      />
     )
   }
 }
 
 AmfFormattedNumberInput.propTypes = {
-	...fieldPropTypes,
-	value : PropTypes.number
+  ...fieldPropTypes,
+  value : PropTypes.number
 }
 
 export default AmfFormattedNumberInput

@@ -130,9 +130,9 @@ const parentItem = PropTypes.shape({
 })
 
 AmfSelectNested.propTypes = {
-	...fieldPropTypes,
-	option : PropTypes.arrayOf(parentItem),
-	value : PropTypes.string
+  ...fieldPropTypes,
+  option : PropTypes.arrayOf(parentItem),
+  value : PropTypes.string
 }
 
 export default AmfSelectNested

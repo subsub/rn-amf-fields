@@ -21,14 +21,14 @@ class AmfSelect extends Component {
 			 onChangeText={onChange}
 			 error={error}
 		   animationDuration={128}
-			/>
+     />
    )
  }
 }
 
 AmfSelect.propTypes = {
-	...fieldPropTypes,
-	value : PropTypes.string
+  ...fieldPropTypes,
+  value : PropTypes.string
 }
 
 export default AmfSelect
