@@ -4,6 +4,7 @@ import AmfLikertScale from '../AmfLikertScale/AmfLikertScale'
 import AmfNumberInput from '../AmfNumberInput/AmfNumberInput'
 import AmfFormattedNumberInput from '../AmfFormattedNumberInput/AmfFormattedNumberInput'
 import AmfRadioButton from '../AmfRadioButton/AmfRadioButton'
+import AmfRadioButtonVertical from '../AmfRadioButton/AmfRadioButtonVertical'
 import AmfDatepicker from '../AmfDatepicker/AmfDatepicker'
 import AmfDateInput from '../AmfDateInput/AmfDateInput'
 import AmfSelect from '../AmfSelect/AmfSelect'
@@ -19,6 +20,7 @@ const switcher = {
   'select': AmfSelect,
   'select-nested': AmfSelectNested,
   'radio' : AmfRadioButton,
+  'radio-vertical' : AmfRadioButtonVertical,
   'datepicker': AmfDatepicker,
   'date': AmfDateInput,
 }
