@@ -5,8 +5,8 @@ import renderer from 'react-test-renderer'
 test('AmfLikertScale without validation', () => {
   let props = {
     label: 'Label',
-    onPress: () => {},
-    items: [
+    onChange: () => {},
+    options: [
       {label:'Sangat Setuju', value: 1},
       {label:'Setuju Setuju', value: 2},
       {label:'Tida Setuju', value: 3},

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import fieldPropTypes from '../fieldPropTypes'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { interpolateRdYlGn } from 'd3-scale-chromatic'
 
@@ -15,11 +16,11 @@ class AmfLikertScale extends Component {
   }
 
   componentDidMount() {
-    this.validate()
+    // this.validate()
   }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.selectedIndex !== this.props.selectedIndex) this.validate()
+    // if (prevProps.selectedIndex !== this.props.selectedIndex) this.validate()
   }
 
   validate = () => {
@@ -46,8 +47,8 @@ class AmfLikertScale extends Component {
 
   renderScale(item, index) {
     let interpolation = 0
-    if (index < this.props.items.length/2) interpolation = index/this.props.items.length
-    else interpolation = (index+1)/this.props.items.length
+    if (index < this.props.options.length/2) interpolation = index/this.props.options.length
+    else interpolation = (index+1)/this.props.options.length
 
     return (
       <TouchableOpacity
@@ -56,17 +57,17 @@ class AmfLikertScale extends Component {
           style.scaleItem,
           {
             borderColor: interpolateRdYlGn(interpolation),
-            backgroundColor: this.props.selectedIndex == index ? interpolateRdYlGn(interpolation) : 'white',
+            backgroundColor: this.props.value == item.value ? interpolateRdYlGn(interpolation) : 'white',
             width: this.state.circleDiameter,
             height: this.state.circleDiameter,
             borderRadius: this.state.circleDiameter/2
           }
         ]}
         onPress={() => {
-          this.props.onPress(index)
+          this.props.onChange(item.value)
         }}
       >
-        <Text style={[style.scaleText, {color: this.props.selectedIndex == index ? 'white' : interpolateRdYlGn(interpolation), fontSize: this.state.circleDiameter/2.5}]}>{item.value}</Text>
+        <Text style={[style.scaleText, {color: this.props.value == item.value ? 'white' : interpolateRdYlGn(interpolation), fontSize: this.state.circleDiameter/2.5}]}>{item.value}</Text>
       </TouchableOpacity>
     )
   }
@@ -80,22 +81,22 @@ class AmfLikertScale extends Component {
     }
 
     return (
-      <View>
+      <View style={{marginVertical: 8}}>
         <Text style={style.label}>{this.props.label}</Text>
         <View style={[{padding: 8}, validationStyle]}>
           <View style={style.scaleContainer}
             onLayout={(event) => {
-              let base = event.nativeEvent.layout.width/this.props.items.length
-              let itemMargin = base/this.props.items.length*1.5
+              let base = event.nativeEvent.layout.width/this.props.options.length
+              let itemMargin = base/this.props.options.length*1.5
               let diameter = (base)-(itemMargin)
               this.setState({circleDiameter: diameter, itemMargin: itemMargin})
             }}
           >
-            { this.props.items.map(this.renderScale.bind(this)) }
+            { this.props.options.map(this.renderScale.bind(this)) }
           </View>
           <View style={[style.noteContainer, {marginHorizontal: this.state.itemMargin/2}]}>
-            <Text style={{textAlign: 'center', width: this.state.circleDiameter}}>{this.props.items[0].label || 'Sangat Tidak Setuju'}</Text>
-            <Text style={{textAlign: 'center', width: this.state.circleDiameter}}>{this.props.items[this.props.items.length-1].label || 'Sangat Setuju'}</Text>
+            <Text style={{textAlign: 'center', width: this.state.circleDiameter}}>{this.props.options[0].label || 'Sangat Tidak Setuju'}</Text>
+            <Text style={{textAlign: 'center', width: this.state.circleDiameter}}>{this.props.options[this.props.options.length-1].label || 'Sangat Setuju'}</Text>
           </View>
         </View>
         { validationText }
@@ -139,13 +140,6 @@ const itemShape = PropTypes.shape({
   value: PropTypes.any.isRequired
 })
 
-AmfLikertScale.propTypes = {
-  label: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(itemShape).isRequired,
-  onPress: PropTypes.func.isRequired,
-  selectedIndex: PropTypes.number.isRequired,
-  pristine: PropTypes.bool,
-  required: PropTypes.bool
-}
+AmfLikertScale.propTypes = fieldPropTypes
 
 export default AmfLikertScale
