@@ -1,6 +1,319 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AmfField should able to render AmfSelect (should transfer its options) 1`] = `
+exports[`AmfField should be able to render AmfLikertScale (should transfer its options) 1`] = `
+<View
+  style={
+    Object {
+      "marginVertical": 8,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#454545",
+        "marginBottom": 8,
+        "marginRight": 16,
+      }
+    }
+  >
+    Label satu dua tiga
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "padding": 8,
+        },
+        Object {
+          "borderColor": "red",
+          "borderWidth": 1,
+        },
+      ]
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "marginBottom": 16,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "rgb(165, 0, 38)",
+            "borderColor": "rgb(165, 0, 38)",
+            "borderRadius": 0,
+            "borderWidth": 1,
+            "height": 0,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 0,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+              },
+              Object {
+                "color": "white",
+                "fontSize": 0,
+              },
+            ]
+          }
+        >
+          Satu
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "rgb(248, 141, 82)",
+            "borderRadius": 0,
+            "borderWidth": 1,
+            "height": 0,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 0,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+              },
+              Object {
+                "color": "rgb(248, 141, 82)",
+                "fontSize": 0,
+              },
+            ]
+          }
+        >
+          Dua
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "rgb(133, 203, 103)",
+            "borderRadius": 0,
+            "borderWidth": 1,
+            "height": 0,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 0,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+              },
+              Object {
+                "color": "rgb(133, 203, 103)",
+                "fontSize": 0,
+              },
+            ]
+          }
+        >
+          Tiga
+        </Text>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "rgb(0, 104, 55)",
+            "borderRadius": 0,
+            "borderWidth": 1,
+            "height": 0,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 0,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          disabled={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "textAlign": "center",
+              },
+              Object {
+                "color": "rgb(0, 104, 55)",
+                "fontSize": 0,
+              },
+            ]
+          }
+        >
+          Empat
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          },
+          Object {
+            "marginHorizontal": 0,
+          },
+        ]
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "textAlign": "center",
+            "width": 0,
+          }
+        }
+      >
+        Label 1
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        disabled={false}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "textAlign": "center",
+            "width": 0,
+          }
+        }
+      >
+        Label 4
+      </Text>
+    </View>
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    disabled={false}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "red",
+        "margin": 4,
+        "marginBottom": 0,
+      }
+    }
+  >
+    Label satu dua tiga harus dipilih
+  </Text>
+</View>
+`;
+
+exports[`AmfField should be able to render AmfSelect (should transfer its options) 1`] = `
 <View
   onLayout={[Function]}
   style={undefined}

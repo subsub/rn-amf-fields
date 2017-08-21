@@ -5400,7 +5400,9 @@ exports[`AmfSelect without validation 1`] = `
                 "fontSize": 16,
               }
             }
-          />
+          >
+            Label
+          </Text>
         </View>
         <View
           style={
