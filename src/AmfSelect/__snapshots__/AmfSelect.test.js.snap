@@ -83,11 +83,11 @@ exports[`AmfSelect with custom selector 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -135,58 +135,6 @@ exports[`AmfSelect with custom selector 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-=======
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
             <View
               style={
                 Object {
@@ -727,11 +675,11 @@ exports[`AmfSelect with empty validation object 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -883,58 +831,6 @@ exports[`AmfSelect with empty validation object 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -942,7 +838,6 @@ exports[`AmfSelect with empty validation object 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -1372,11 +1267,11 @@ exports[`AmfSelect with empty value 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -1528,58 +1423,6 @@ exports[`AmfSelect with empty value 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -1587,7 +1430,6 @@ exports[`AmfSelect with empty value 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -2017,11 +1859,11 @@ exports[`AmfSelect with horizontal layout 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -2173,58 +2015,6 @@ exports[`AmfSelect with horizontal layout 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -2232,7 +2022,6 @@ exports[`AmfSelect with horizontal layout 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -2664,11 +2453,11 @@ exports[`AmfSelect with label 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -2820,58 +2609,6 @@ exports[`AmfSelect with label 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -2879,7 +2616,6 @@ exports[`AmfSelect with label 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -3311,11 +3047,11 @@ exports[`AmfSelect with label 2`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -3467,58 +3203,6 @@ exports[`AmfSelect with label 2`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -3526,7 +3210,6 @@ exports[`AmfSelect with label 2`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -3956,11 +3639,11 @@ exports[`AmfSelect with required validation 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -4112,58 +3795,6 @@ exports[`AmfSelect with required validation 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -4171,7 +3802,6 @@ exports[`AmfSelect with required validation 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -4601,11 +4231,11 @@ exports[`AmfSelect with required validation 2`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -4653,58 +4283,6 @@ exports[`AmfSelect with required validation 2`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value="foo"
-            />
-=======
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
             <View
               style={
                 Object {
@@ -5209,13 +4787,13 @@ exports[`AmfSelect with unmatch value 1`] = `
           style={
             Object {
               "position": "absolute",
-              "top": 16,
+              "top": 36,
             }
           }
         >
           <Text
             accessible={true}
-            active={true}
+            active={false}
             allowFontScaling={true}
             animationDuration={128}
             collapsable={undefined}
@@ -5227,7 +4805,7 @@ exports[`AmfSelect with unmatch value 1`] = `
             style={
               Object {
                 "color": "rgba(0, 0, 0, 0.38)",
-                "fontSize": 12,
+                "fontSize": 16,
               }
             }
           />
@@ -5245,11 +4823,11 @@ exports[`AmfSelect with unmatch value 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -5286,7 +4864,7 @@ exports[`AmfSelect with unmatch value 1`] = `
               ]
             }
             underlineColorAndroid="transparent"
-            value="No Match"
+            value=""
           />
           <View
             style={
@@ -5367,21 +4945,13 @@ exports[`AmfSelect with unmatch value 1`] = `
                 "left": 0,
                 "paddingVertical": 4,
                 "position": "absolute",
-<<<<<<< HEAD
-                "top": 36,
-=======
                 "right": 0,
                 "top": 0,
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               }
             }
           >
             <Text
               accessible={true}
-<<<<<<< HEAD
-              active={false}
-=======
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               allowFontScaling={true}
               collapsable={undefined}
               disabled={false}
@@ -5389,15 +4959,10 @@ exports[`AmfSelect with unmatch value 1`] = `
               numberOfLines={1}
               style={
                 Object {
-<<<<<<< HEAD
-                  "color": "rgba(0, 0, 0, 0.38)",
-                  "fontSize": 16,
-=======
                   "backgroundColor": "transparent",
                   "color": "rgb(213, 0, 0)",
                   "fontSize": 0,
                   "opacity": 0,
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
                 }
               }
             />
@@ -5414,38 +4979,6 @@ exports[`AmfSelect with unmatch value 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -5453,7 +4986,6 @@ exports[`AmfSelect with unmatch value 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",
@@ -5462,11 +4994,6 @@ exports[`AmfSelect with unmatch value 1`] = `
                   "opacity": 1,
                 }
               }
-<<<<<<< HEAD
-              underlineColorAndroid="transparent"
-              value=""
-=======
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
             />
           </View>
         </View>
@@ -5890,11 +5417,11 @@ exports[`AmfSelect without validation 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -6046,58 +5573,6 @@ exports[`AmfSelect without validation 1`] = `
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "foo",
-                    "value": "foo",
-                  },
-                  Object {
-                    "realValue": "bar",
-                    "value": "bar",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value=""
-            />
-            <View
-=======
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -6105,7 +5580,6 @@ exports[`AmfSelect without validation 1`] = `
               disabled={false}
               ellipsizeMode="tail"
               numberOfLines={1}
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
               style={
                 Object {
                   "backgroundColor": "transparent",

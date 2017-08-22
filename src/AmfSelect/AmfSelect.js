@@ -23,14 +23,14 @@ class AmfSelect extends Component {
    if (temp) dropdownValue = temp.label
 
    return (
-    <Dropdown
-      label={label}
-      data={dropdownData}
-      value={dropdownValue || ''}
-      onChangeText={onChange}
-      error={error}
-      animationDuration={128}
-    />
+     <Dropdown
+       label={label}
+       data={dropdownData}
+       value={dropdownValue || ''}
+       onChangeText={onChange}
+       error={error}
+       animationDuration={128}
+     />
    )
  }
 }

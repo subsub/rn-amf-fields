@@ -380,20 +380,20 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
             data={
               Array [
                 Object {
-                  "label": "Label 1",
-                  "value": "Satu",
+                  "realValue": "Satu",
+                  "value": "Label 1",
                 },
                 Object {
-                  "label": "Label 2",
-                  "value": "Dua",
+                  "realValue": "Dua",
+                  "value": "Label 2",
                 },
                 Object {
-                  "label": "Label 3",
-                  "value": "Tiga",
+                  "realValue": "Tiga",
+                  "value": "Label 3",
                 },
                 Object {
-                  "label": "Label 4",
-                  "value": "Empat",
+                  "realValue": "Empat",
+                  "value": "Label 4",
                 },
               ]
             }
@@ -429,7 +429,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
               ]
             }
             underlineColorAndroid="transparent"
-            value="Satu"
+            value="Label 1"
           />
           <View
             style={
@@ -440,66 +440,6 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
               }
             }
           >
-<<<<<<< HEAD
-            <TextInput
-              autoCapitalize="sentences"
-              blurOnSubmit={true}
-              data={
-                Array [
-                  Object {
-                    "realValue": "Satu",
-                    "value": "Label 1",
-                  },
-                  Object {
-                    "realValue": "Dua",
-                    "value": "Label 2",
-                  },
-                  Object {
-                    "realValue": "Tiga",
-                    "value": "Label 3",
-                  },
-                  Object {
-                    "realValue": "Empat",
-                    "value": "Label 4",
-                  },
-                ]
-              }
-              disableFullscreenUI={true}
-              editable={false}
-              error=""
-              itemColor="rgba(0, 0, 0, .54)"
-              itemCount={4}
-              keyboardType={undefined}
-              onBlur={[Function]}
-              onChange={[Function]}
-              onChangeText={[Function]}
-              onContentSizeChange={[Function]}
-              onFocus={[Function]}
-              renderAccessory={[Function]}
-              returnKeyType={undefined}
-              selectionColor="rgb(0, 145, 234)"
-              shadeOpacity={0.12}
-              style={
-                Array [
-                  Object {
-                    "flex": 1,
-                    "margin": 0,
-                    "padding": 0,
-                    "top": 2,
-                  },
-                  Object {
-                    "color": "rgba(0, 0, 0, .87)",
-                    "fontSize": 16,
-                    "height": 24,
-                  },
-                  undefined,
-                ]
-              }
-              underlineColorAndroid="transparent"
-              value="Label 1"
-            />
-=======
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
             <View
               style={
                 Object {
@@ -812,7 +752,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                   ]
                 }
               >
-                Satu
+                Label 1
               </Text>
               <View
                 collapsable={undefined}
@@ -828,36 +768,10 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     "top": 0,
                   }
                 }
-<<<<<<< HEAD
-                testID={undefined}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  numberOfLines={1}
-                  style={
-                    Array [
-                      undefined,
-                      Object {
-                        "color": "rgba(0, 0, 0, .87)",
-                        "fontSize": 16,
-                      },
-                    ]
-                  }
-                >
-                  Label 1
-                </Text>
-                <View
-                  collapsable={undefined}
-                  style={
-=======
               />
               <View
                 style={
                   Array [
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
                     Object {
                       "backgroundColor": "transparent",
                       "bottom": 0,
@@ -939,7 +853,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                   ]
                 }
               >
-                Dua
+                Label 2
               </Text>
               <View
                 collapsable={undefined}
@@ -955,36 +869,10 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     "top": 0,
                   }
                 }
-<<<<<<< HEAD
-                testID={undefined}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  numberOfLines={1}
-                  style={
-                    Array [
-                      undefined,
-                      Object {
-                        "color": "rgba(0, 0, 0, .87)",
-                        "fontSize": 16,
-                      },
-                    ]
-                  }
-                >
-                  Label 2
-                </Text>
-                <View
-                  collapsable={undefined}
-                  style={
-=======
               />
               <View
                 style={
                   Array [
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
                     Object {
                       "backgroundColor": "transparent",
                       "bottom": 0,
@@ -1066,7 +954,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                   ]
                 }
               >
-                Tiga
+                Label 3
               </Text>
               <View
                 collapsable={undefined}
@@ -1082,36 +970,10 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     "top": 0,
                   }
                 }
-<<<<<<< HEAD
-                testID={undefined}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  numberOfLines={1}
-                  style={
-                    Array [
-                      undefined,
-                      Object {
-                        "color": "rgba(0, 0, 0, .87)",
-                        "fontSize": 16,
-                      },
-                    ]
-                  }
-                >
-                  Label 3
-                </Text>
-                <View
-                  collapsable={undefined}
-                  style={
-=======
               />
               <View
                 style={
                   Array [
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
                     Object {
                       "backgroundColor": "transparent",
                       "bottom": 0,
@@ -1193,7 +1055,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                   ]
                 }
               >
-                Empat
+                Label 4
               </Text>
               <View
                 collapsable={undefined}
@@ -1209,36 +1071,10 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
                     "top": 0,
                   }
                 }
-<<<<<<< HEAD
-                testID={undefined}
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  disabled={false}
-                  ellipsizeMode="tail"
-                  numberOfLines={1}
-                  style={
-                    Array [
-                      undefined,
-                      Object {
-                        "color": "rgba(0, 0, 0, .87)",
-                        "fontSize": 16,
-                      },
-                    ]
-                  }
-                >
-                  Label 4
-                </Text>
-                <View
-                  collapsable={undefined}
-                  style={
-=======
               />
               <View
                 style={
                   Array [
->>>>>>> 6f78a86ca05a04e13e3e147c05c991fa9730b609
                     Object {
                       "backgroundColor": "transparent",
                       "bottom": 0,
