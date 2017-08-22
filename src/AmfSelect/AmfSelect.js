@@ -27,7 +27,7 @@ class AmfSelect extends Component {
        label={label}
        data={dropdownData}
        value={dropdownValue || ''}
-       onChangeText={onChange}
+       onChangeText={this.onChange}
        error={error}
        animationDuration={128}
      />
