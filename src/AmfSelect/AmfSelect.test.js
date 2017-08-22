@@ -16,7 +16,7 @@ let validation = {
 }
 
 test('AmfSelect without validation', () => {
-  let props = { options, onChange }
+  let props = { options, onChange, label:'Label' }
 
   const component = renderer.create(<AmfSelect {...props} />)
   
@@ -123,70 +123,4 @@ test('AmfSelect test onChange function', () => {
   component.onChange('foo', 0)
   
   expect(props.onChange).toHaveBeenCalled()
-})
-
-test('AmfSelect, test willHide event', () => {
-  let props = {
-    options, onChange
-  }
-
-  const component = new AmfSelect(props)
-  component.setState = jest.fn()
-  component.onSelectWillHide()
-  
-  expect(component.setState).toHaveBeenCalled()
-})
-
-test('AmfSelect, test willShow event', () => {
-  let props = {
-    options, onChange
-  }
-  let propsWithValidation = {
-    ...props, validation, value: null
-  }
-
-  const component = new AmfSelect(props)
-  component.setState = jest.fn()
-  component.onSelectWillShow()
-
-  const componentWithValidation = new AmfSelect(propsWithValidation)
-  componentWithValidation.setState = jest.fn()
-  componentWithValidation.onSelectWillShow()
-
-  expect(component.setState).toHaveBeenCalled()
-  expect(propsWithValidation.onChange).toHaveBeenCalled()
-})
-
-test('AmfSelect, test didUpdate event', () => {
-  let props = {
-    options, onChange
-  }
-
-  const component = new AmfSelect(props)
-  component.state = {isFocused: false}
-  component.validate = jest.fn()
-  component.componentDidUpdate({}, {isFocused: true})
-  expect(component.validate).toHaveBeenCalled()
-
-  const componentFocused = new AmfSelect(props)
-  componentFocused.state = {isFocused: true}
-  componentFocused.validate = jest.fn()
-  componentFocused.componentDidUpdate({}, {isFocused: false})
-  expect(componentFocused.validate).not.toHaveBeenCalled()
-})
-
-test.skip('AmfSelect, test new options', () => {
-  let props = {
-    options, onChange
-  }
-  let newItem = [{
-    label: 'new',
-    value: 'new'
-  }]
-  let expected = newItem.map(i => i.label)
-
-  const component = new AmfSelect(props)
-  component.componentWillReceiveProps({options: newItem})
-
-  expect(component.options).toEqual(expected)
 })

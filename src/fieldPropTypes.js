@@ -7,8 +7,9 @@ const itemShape = PropTypes.shape({
 })
 
 export default {
-  label: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  value: PropTypes.string,
-  options: PropTypes.arrayOf(itemShape),
+  label    : PropTypes.string.isRequired,
+  onChange : PropTypes.func.isRequired,
+  value    : PropTypes.any,
+  options  : PropTypes.arrayOf(itemShape),
+  error    : PropTypes.string,
 }

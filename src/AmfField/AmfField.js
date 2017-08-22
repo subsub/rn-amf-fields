@@ -4,9 +4,11 @@ import AmfLikertScale from '../AmfLikertScale/AmfLikertScale'
 import AmfNumberInput from '../AmfNumberInput/AmfNumberInput'
 import AmfFormattedNumberInput from '../AmfFormattedNumberInput/AmfFormattedNumberInput'
 import AmfRadioButton from '../AmfRadioButton/AmfRadioButton'
+import AmfRadioButtonVertical from '../AmfRadioButtonVertical/AmfRadioButtonVertical'
 import AmfDatepicker from '../AmfDatepicker/AmfDatepicker'
 import AmfDateInput from '../AmfDateInput/AmfDateInput'
 import AmfSelect from '../AmfSelect/AmfSelect'
+import AmfSelectNested from '../AmfSelectNested/AmfSelectNested'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
@@ -16,7 +18,9 @@ const switcher = {
   'number': AmfNumberInput,
   'formatted-number': AmfFormattedNumberInput,
   'select': AmfSelect,
+  'select-nested': AmfSelectNested,
   'radio' : AmfRadioButton,
+  'radio-vertical' : AmfRadioButtonVertical,
   'datepicker': AmfDatepicker,
   'date': AmfDateInput,
 }
@@ -39,11 +43,6 @@ class AmfField extends Component {
   }
 }
 
-
-AmfField.propTypes = {
-  ...fieldPropTypes,
-  type: PropTypes.string.isRequired,
-  value: PropTypes.any
-}
+AmfField.propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired,value: PropTypes.any}
 
 export default AmfField

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import fieldPropTypes from '../fieldPropTypes'
 import PropTypes from 'prop-types'
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native'
+import fieldPropTypes from '../fieldPropTypes'
 import RadioForm, { RadioButton, RadioButtonInput, RadioButtonLabel } from 'react-native-simple-radio-button'
 
 class AmfRadioButton extends Component {
@@ -37,9 +37,9 @@ class AmfRadioButton extends Component {
     return (
       <View>
         <Text style={style.label}>{this.props.label}</Text>
-        <RadioForm formHorizontal={this.props.layout === 'horizontal' } style={{alignItems: 'flex-start'}}>
+        <RadioForm formHorizontal={false} >
           { options.map( (option, i) => (
-            <RadioButton labelHorizontal={true} key={i}>
+            <RadioButton labelHorizontal={true} key={i} >
               {/*  You can set RadioButtonLabel before RadioButtonInput */}
               <RadioButtonInput
                 obj={option}
@@ -111,9 +111,6 @@ const style = StyleSheet.create({
   }
 })
 
-AmfRadioButton.propTypes = {
-  ...fieldPropTypes,
-  layout: PropTypes.oneOf(['horizontal', 'vertical']),
-}
+AmfRadioButton.propTypes = { ...fieldPropTypes }
 
 export default AmfRadioButton
