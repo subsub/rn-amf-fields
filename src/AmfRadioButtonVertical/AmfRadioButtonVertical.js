@@ -111,6 +111,6 @@ const style = StyleSheet.create({
   }
 })
 
-AmfRadioButton.propTypes = { ...fieldProptypes }
+AmfRadioButton.propTypes = { ...fieldPropTypes }
 
 export default AmfRadioButton
