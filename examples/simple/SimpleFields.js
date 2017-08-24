@@ -48,6 +48,7 @@ export default class SimpleField extends Component {
 		} = this.state;
 
 
+
     return (
 			<ScrollView>
 
@@ -60,18 +61,22 @@ export default class SimpleField extends Component {
 					label="text" 
 					onChange={cc('text')}            
 					value={text}
+					onFinish={e => this.nextField1.focus()}
 				/>
 
 				<AmfField type="number"             
 					label="number" 
 					onChange={cc('number')}            
 					value={number}
+					ref={ f => this.nextField1 = f }
+					onFinish={e => this.nextField.focus()}
 				/>
 
 				<AmfField type="formatted-number"             
 					label="formatted-number" 
 					onChange={cc('formattedNumber')}            
 					value={formattedNumber}
+					ref={ f => this.nextField = f }
 				/>
 
 				<AmfField type="select"             
