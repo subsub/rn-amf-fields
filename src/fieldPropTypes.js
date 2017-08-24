@@ -12,4 +12,5 @@ export default {
   value    : PropTypes.any,
   options  : PropTypes.arrayOf(itemShape),
   error    : PropTypes.string,
+  onFinish : PropTypes.func,
 }

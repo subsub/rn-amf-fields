@@ -27,15 +27,13 @@ const switcher = {
 
 class AmfField extends Component {
 
-  constructor(props) {
-    super(props)
-  }
+  focus = () => typeof this.field.focus === 'function' && this.field.focus()
 
   render() {
-    const { type, label, onChange, value, options, error } = this.props
+    const { type } = this.props
     if (type in switcher) {
       const Component = switcher[type]
-      return <Component type={type} label={label} onChange={onChange} value={value} options={options} error={error} />
+      return <Component { ...this.props } ref={ f => this.field = f } />
     } else {
       throw new TypeError ('Unknown type Field "' + type + '" in AmfField')
     }

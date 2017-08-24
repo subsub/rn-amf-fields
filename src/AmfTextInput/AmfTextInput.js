@@ -3,32 +3,35 @@ import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 import { TextField } from 'react-native-material-textfield'
 
-class AmfTextInput extends Component {
+export default class AmfTextInput extends Component {
 
- onChange = (val) => this.props.onChange(val);
+  static propTypes = { ...fieldPropTypes }
 
- render() {
+  onChange = val => this.props.onChange(val)
 
-   const { label, value, error } = this.props
+  onSubmitEditing = event => typeof this.props.onFinish === 'function' && this.props.onFinish(event)
 
-   const { onChange } = this
+  assignRef = ref => this.input = ref
 
-   return (
-     <TextField
-       label={label}
-       onChangeText={onChange}
-       keyboardType="default"
-       returnKeyType="next"
-       value={value || ''}
-       error={error}
-     />
-   )
- }
+  focus = () => this.input.focus()
+
+  render() {
+
+    const { label, value, error } = this.props
+
+    const { onChange, onSubmitEditing, assignRef } = this
+
+    return (
+      <TextField
+      label={label}
+      onChangeText={onChange}
+      keyboardType="default"
+      returnKeyType="next"
+      value={value || ''}
+      error={error}
+      onSubmitEditing={onSubmitEditing}
+      ref={assignRef}
+      />
+    )
+  }
 }
-
-AmfTextInput.propTypes = {
-  ...fieldPropTypes,
-  value : PropTypes.string
-}
-
-export default AmfTextInput

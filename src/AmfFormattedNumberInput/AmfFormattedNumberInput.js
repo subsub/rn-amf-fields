@@ -4,15 +4,23 @@ import { TextField } from 'react-native-material-textfield'
 import fieldPropTypes from '../fieldPropTypes'
 import numeral from 'numeral'
 
-class AmfFormattedNumberInput extends Component {
+export default class AmfFormattedNumberInput extends Component {
+
+  static propTypes = { ...fieldPropTypes }
 
   onChange = val => this.props.onChange(numeral(val).value())
+
+  onSubmitEditing = event => typeof this.props.onFinish === 'function' && this.props.onFinish(event)
+
+  assignRef = ref => this.input = ref
+
+  focus = () => this.input.focus()
 
   render() {
 
     const { label, value, error } = this.props
 
-    const { onChange } = this
+    const { onChange, onSubmitEditing, assignRef } = this
 
     let shownValue = value && numeral(value).format()
 
@@ -23,20 +31,15 @@ class AmfFormattedNumberInput extends Component {
 
     return (
       <TextField
-        label={label}
-        onChangeText={onChange}
-        keyboardType="numeric"
-        returnKeyType="next"
-        value={shownValue || ''}
-			  error={error}
+      label={label}
+      onChangeText={onChange}
+      keyboardType="numeric"
+      returnKeyType="next"
+      value={shownValue || ''}
+      error={error}
+      onSubmitEditing={onSubmitEditing}
+      ref={assignRef}
       />
     )
   }
 }
-
-AmfFormattedNumberInput.propTypes = {
-  ...fieldPropTypes,
-  value : PropTypes.number
-}
-
-export default AmfFormattedNumberInput
