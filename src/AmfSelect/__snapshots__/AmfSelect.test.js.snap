@@ -83,11 +83,11 @@ exports[`AmfSelect with custom selector 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -675,11 +675,11 @@ exports[`AmfSelect with empty validation object 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -1267,11 +1267,11 @@ exports[`AmfSelect with empty value 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -1859,11 +1859,11 @@ exports[`AmfSelect with horizontal layout 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -2453,11 +2453,11 @@ exports[`AmfSelect with label 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -3047,11 +3047,11 @@ exports[`AmfSelect with label 2`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -3639,11 +3639,11 @@ exports[`AmfSelect with required validation 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -4231,11 +4231,11 @@ exports[`AmfSelect with required validation 2`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -4787,13 +4787,13 @@ exports[`AmfSelect with unmatch value 1`] = `
           style={
             Object {
               "position": "absolute",
-              "top": 16,
+              "top": 36,
             }
           }
         >
           <Text
             accessible={true}
-            active={true}
+            active={false}
             allowFontScaling={true}
             animationDuration={128}
             collapsable={undefined}
@@ -4805,7 +4805,7 @@ exports[`AmfSelect with unmatch value 1`] = `
             style={
               Object {
                 "color": "rgba(0, 0, 0, 0.38)",
-                "fontSize": 12,
+                "fontSize": 16,
               }
             }
           />
@@ -4823,11 +4823,11 @@ exports[`AmfSelect with unmatch value 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]
@@ -4864,7 +4864,7 @@ exports[`AmfSelect with unmatch value 1`] = `
               ]
             }
             underlineColorAndroid="transparent"
-            value="No Match"
+            value=""
           />
           <View
             style={
@@ -5417,11 +5417,11 @@ exports[`AmfSelect without validation 1`] = `
             data={
               Array [
                 Object {
-                  "label": "foo",
+                  "realValue": "foo",
                   "value": "foo",
                 },
                 Object {
-                  "label": "bar",
+                  "realValue": "bar",
                   "value": "bar",
                 },
               ]

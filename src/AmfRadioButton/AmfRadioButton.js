@@ -37,9 +37,9 @@ class AmfRadioButton extends Component {
     return (
       <View>
         <Text style={style.label}>{this.props.label}</Text>
-        <RadioForm formHorizontal={true} >
+        <RadioForm formHorizontal={this.props.layout === 'horizontal' } style={{alignItems: 'flex-start'}}>
           { options.map( (option, i) => (
-            <RadioButton labelHorizontal={true} key={i} >
+            <RadioButton labelHorizontal={true} key={i}>
               {/*  You can set RadioButtonLabel before RadioButtonInput */}
               <RadioButtonInput
                 obj={option}
@@ -111,6 +111,9 @@ const style = StyleSheet.create({
   }
 })
 
-AmfRadioButton.propTypes = { ...fieldPropTypes }
+AmfRadioButton.propTypes = {
+  ...fieldPropTypes,
+  layout: PropTypes.oneOf(['horizontal', 'vertical']),
+}
 
 export default AmfRadioButton

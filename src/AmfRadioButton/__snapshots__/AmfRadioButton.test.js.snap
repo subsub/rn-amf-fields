@@ -21,10 +21,10 @@ exports[`AmfRadioButton simple render 1`] = `
     style={
       Array [
         undefined,
-        undefined,
         Object {
-          "flexDirection": "row",
+          "alignItems": "flex-start",
         },
+        false,
       ]
     }
   >

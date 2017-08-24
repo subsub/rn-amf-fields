@@ -10,39 +10,8 @@ class AmfLikertScale extends Component {
 
     this.state = {
       circleDiameter: 0,
-      itemMargin: 0,
-      valid: false
+      itemMargin: 0
     }
-  }
-
-  componentDidMount() {
-    // this.validate()
-  }
-
-  componentDidUpdate(prevProps) {
-    // if (prevProps.selectedIndex !== this.props.selectedIndex) this.validate()
-  }
-
-  validate = () => {
-    const { required, pristine, selectedIndex } = this.props
-
-    if (!required) {
-      this.setState({valid: true})
-      return
-    }
-
-    if (pristine) {
-      this.setState({valid: true})
-      return
-    }
-
-    if (selectedIndex !== -1) {
-      this.setState({valid: true})
-      return
-    }
-
-    this.setState({valid: false})
-    return
   }
 
   renderScale(item, index) {
@@ -75,10 +44,10 @@ class AmfLikertScale extends Component {
   render() {
     let validationStyle = {}
     let validationText
-    if (!this.state.valid) {
-      validationStyle = { borderColor: 'red', borderWidth: 1 }
-      validationText = <Text style={style.errorText}>{this.props.label + ' harus dipilih'}</Text>
-    }
+    // if (!this.state.valid) {
+    //   validationStyle = { borderColor: 'red', borderWidth: 1 }
+    //   validationText = <Text style={style.errorText}>{this.props.label + ' harus dipilih'}</Text>
+    // }
 
     return (
       <View style={{marginVertical: 8}}>

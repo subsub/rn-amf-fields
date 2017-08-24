@@ -29,10 +29,7 @@ exports[`AmfLikertScale without validation 1`] = `
         Object {
           "padding": 8,
         },
-        Object {
-          "borderColor": "red",
-          "borderWidth": 1,
-        },
+        Object {},
       ]
     }
   >
@@ -295,20 +292,5 @@ exports[`AmfLikertScale without validation 1`] = `
       </Text>
     </View>
   </View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    disabled={false}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "red",
-        "margin": 4,
-        "marginBottom": 0,
-      }
-    }
-  >
-    Label harus dipilih
-  </Text>
 </View>
 `;

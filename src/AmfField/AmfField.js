@@ -25,12 +25,15 @@ const switcher = {
   'date': AmfDateInput,
 }
 
-class AmfField extends Component {
+export default class AmfField extends Component {
+
+	static propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired }
 
   focus = () => typeof this.field.focus === 'function' && this.field.focus()
 
   render() {
-    const { type } = this.props
+    const props = this.props
+    const type = props.type
     if (type in switcher) {
       const Component = switcher[type]
       return <Component { ...this.props } ref={ f => this.field = f } />
@@ -40,6 +43,3 @@ class AmfField extends Component {
   }
 }
 
-AmfField.propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired}
-
-export default AmfField
