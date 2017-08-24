@@ -31,14 +31,14 @@ export default class AmfFormattedNumberInput extends Component {
 
     return (
       <TextField
-      label={label}
-      onChangeText={onChange}
-      keyboardType="numeric"
-      returnKeyType="next"
-      value={shownValue || ''}
-      error={error}
-      onSubmitEditing={onSubmitEditing}
-      ref={assignRef}
+        label={label}
+        onChangeText={onChange}
+        keyboardType="numeric"
+        returnKeyType="next"
+        value={shownValue || ''}
+        error={error}
+        onSubmitEditing={onSubmitEditing}
+        ref={assignRef}
       />
     )
   }

@@ -1188,6 +1188,7 @@ exports[`AmfField without validation 1`] = `
         onChangeText={[Function]}
         onContentSizeChange={[Function]}
         onFocus={[Function]}
+        onSubmitEditing={[Function]}
         returnKeyType="next"
         selectionColor="rgb(0, 145, 234)"
         style={

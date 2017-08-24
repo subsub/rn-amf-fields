@@ -23,14 +23,14 @@ export default class AmfTextInput extends Component {
 
     return (
       <TextField
-      label={label}
-      onChangeText={onChange}
-      keyboardType="default"
-      returnKeyType="next"
-      value={value || ''}
-      error={error}
-      onSubmitEditing={onSubmitEditing}
-      ref={assignRef}
+        label={label}
+        onChangeText={onChange}
+        keyboardType="default"
+        returnKeyType="next"
+        value={value || ''}
+        error={error}
+        onSubmitEditing={onSubmitEditing}
+        ref={assignRef}
       />
     )
   }

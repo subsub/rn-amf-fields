@@ -23,14 +23,14 @@ export default class AmfNumberInput extends Component {
 
     return (
       <TextField
-      label={label}
-      onChangeText={onChange}
-      keyboardType="numeric"
-      returnKeyType="next"
-      value={value || ''}
-      error={error}
-      onSubmitEditing={onSubmitEditing}
-      ref={assignRef}
+        label={label}
+        onChangeText={onChange}
+        keyboardType="numeric"
+        returnKeyType="next"
+        value={value || ''}
+        error={error}
+        onSubmitEditing={onSubmitEditing}
+        ref={assignRef}
       />
     )
   }
