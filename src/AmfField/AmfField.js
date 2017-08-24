@@ -27,7 +27,7 @@ const switcher = {
 
 export default class AmfField extends Component {
 
-	static propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired }
+ static propTypes = {...fieldPropTypes, type:PropTypes.string.isRequired }
 
   focus = () => typeof this.field.focus === 'function' && this.field.focus()
 
