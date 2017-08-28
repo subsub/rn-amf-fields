@@ -195,6 +195,11 @@ exports[`AmfDateInput without validation 1`] = `
               "value": "29",
             },
             Object {
+              "label": "30",
+              "textColor": undefined,
+              "value": "30",
+            },
+            Object {
               "label": "31",
               "textColor": undefined,
               "value": "31",

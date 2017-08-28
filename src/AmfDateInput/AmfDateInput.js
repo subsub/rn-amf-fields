@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, Text, View, Picker } from 'react-native'
-import moment from 'moment'
+import moment from "moment/min/moment-with-locales.min.js"
+
+moment.locale("id")
 
 class AmfDateInput extends Component {
 
@@ -33,16 +35,22 @@ class AmfDateInput extends Component {
     let month = type == 'month' ? val : this.state.month
     let day   = type == 'day'   ? val : this.state.day
 
-    this.setState({ day, month, year })
-
-    if (day == '' || month == '' || year == '') return
-
-    let date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
-
-    while (date == 'Invalid date') {
-      day = (parseInt(day)-1).padStart(2, '0')
-      date = moment([year, month, day].join('-'), 'YYYY-MM-DD').format('YYYY-MM-DD')
+    if (day == '' || month == '' || year == '') {
+      this.setState({ day, month, year })
+      return
     }
+    
+    let date = moment([year, month, day].join('-'), 'YYYY-MMM-DD').format('YYYY-MM-DD')
+    console.log([year, month, day].join('-'))
+    console.log(date, day, month, year)
+    while (date == 'Invalid date') {
+      day = (parseInt(day)-1).toString()
+      date = moment([year, month, day].join('-'), 'YYYY-MMM-D').format('YYYY-MM-DD')
+    }
+    let monthNumStr = ""
+    [year, monthNumStr, day] = date.split('-')
+
+    this.setState({ day, month, year })
 
     return this.props.onChange(date)
   }
@@ -106,7 +114,7 @@ class AmfDateInput extends Component {
 
 const months = ['MM', 'Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ags', 'Sep', 'Okt', 'Nov', 'Des']
 
-const days   = ['DD', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '31']
+const days   = ['DD', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31']
 
 let yearsConst = ['YYYY']
 for (let i=1940; i< new Date().getFullYear() - 18; i++) { yearsConst.push(String(i)) }
