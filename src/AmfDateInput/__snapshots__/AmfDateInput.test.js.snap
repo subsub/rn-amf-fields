@@ -45,6 +45,11 @@ exports[`AmfDateInput without validation 1`] = `
         items={
           Array [
             Object {
+              "label": "DD",
+              "textColor": undefined,
+              "value": "DD",
+            },
+            Object {
               "label": "01",
               "textColor": undefined,
               "value": "01",
@@ -236,6 +241,11 @@ exports[`AmfDateInput without validation 1`] = `
         items={
           Array [
             Object {
+              "label": "MM",
+              "textColor": undefined,
+              "value": "MM",
+            },
+            Object {
               "label": "Jan",
               "textColor": undefined,
               "value": "Jan",
@@ -336,6 +346,11 @@ exports[`AmfDateInput without validation 1`] = `
       <RCTPicker
         items={
           Array [
+            Object {
+              "label": "YYYY",
+              "textColor": undefined,
+              "value": "YYYY",
+            },
             Object {
               "label": "1940",
               "textColor": undefined,
