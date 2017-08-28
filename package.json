@@ -9,7 +9,7 @@
     "eslint": "eslint src",
     "preversion": "npm run eslint -- --fix; npm test; ",
     "version": "npm run build && git add -A dist",
-    "postversion": "git checkout master; git merge dev; git push; git push --tags; npm publish; git checkout dev"
+    "postversion": "git checkout master; git push; git push --tags; npm publish;"
   },
   "repository": {
     "type": "git",
