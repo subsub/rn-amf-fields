@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { StyleSheet, Text, View, Picker } from 'react-native'
-import moment from "moment/min/moment-with-locales.min.js"
+import moment from 'moment/min/moment-with-locales.min.js'
 
-moment.locale("id")
+moment.locale('id')
 
 class AmfDateInput extends Component {
 
@@ -47,8 +47,8 @@ class AmfDateInput extends Component {
       day = (parseInt(day)-1).toString()
       date = moment([year, month, day].join('-'), 'YYYY-MMM-D').format('YYYY-MM-DD')
     }
-    let monthNumStr = ""
-    [year, monthNumStr, day] = date.split('-')
+    let monthNumStr = ''
+      [year, monthNumStr, day] = date.split('-')
 
     this.setState({ day, month, year })
 
