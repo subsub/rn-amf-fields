@@ -10,10 +10,14 @@ class AmfDateInput extends Component {
   constructor(props) {
     super(props)
 		
-    let year = month =  day = errorMessage = '', valid = false
+    let year = monthNumStr = month =  day = errorMessage = '', valid = false
 
     if (this.props.value) {
-      [year, month, day] = this.props.value.split('-')
+      [year, monthNumStr, day] = this.props.value.split('-')
+    }
+    let tempMoment = moment(this.props.value)
+    if (tempMoment.isValid()) {
+      month = tempMoment.format("MMM")
     }
 
     this.state = { valid, errorMessage, year, month, day }
@@ -86,22 +90,21 @@ class AmfDateInput extends Component {
     }
 
     const updateValue = this.updateValue
+    console.log("test", year, month, day)
 
     return (
-      <View style={{flexDirection:'row', alignItems: 'center'}}>
-
+      <View>
         <Text style={style.label}>{this.props.label}</Text>
         <View style={[style.pickerContainer, validationStyle]}>
-          <Picker mode='dropdown' onValueChange={val => updateValue('day', val)} selectedValue={day} style={{width:58}}>
+          <Picker mode='dropdown' onValueChange={val => updateValue('day', val)} selectedValue={day} style={{flex: 1}}>
             { days.map(i => <Picker.Item key={'d' + i} value={i} label={i} />) }
           </Picker>
-          <Text style={style.dividerText}>/</Text>
 
-          <Picker mode='dropdown' onValueChange={val => updateValue('month', val)} selectedValue={month} style={{width:70}}>
+          <Picker mode='dropdown' onValueChange={val => updateValue('month', val)} selectedValue={month} style={{flex: 1}}>
             { months.map(i => <Picker.Item key={'m' + i} value={i} label={i} />) }
           </Picker>
-          <Text style={style.dividerText}>/</Text>
-          <Picker mode='dropdown' onValueChange={val => updateValue('year', val)} selectedValue={year} style={{width:80}}>
+          
+          <Picker mode='dropdown' onValueChange={val => updateValue('year', val)} selectedValue={year} style={{flex: 1}}>
             { years.map(i => <Picker.Item key={'y' + i} value={i} label={i} />) }
           </Picker>
 
@@ -156,13 +159,8 @@ const style = StyleSheet.create({
   }
 })
 
-AmfDateInput.defaultProps = {
-  layout: 'vertical'
-}
-
 AmfDateInput.propTypes = {
   label: PropTypes.string,
-  layout: PropTypes.oneOf(['vertical', 'horizontal']),
   onChange: PropTypes.func.isRequired,
   value: PropTypes.string
 }

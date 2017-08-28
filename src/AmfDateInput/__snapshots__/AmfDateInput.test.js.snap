@@ -1,14 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AmfDateInput without validation 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-    }
-  }
->
+<View>
   <Text
     accessible={true}
     allowFontScaling={true}
@@ -37,7 +30,7 @@ exports[`AmfDateInput without validation 1`] = `
     <View
       style={
         Object {
-          "width": 58,
+          "flex": 1,
         }
       }
     >
@@ -220,25 +213,10 @@ exports[`AmfDateInput without validation 1`] = `
         }
       />
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#9B9B9B",
-          "fontSize": 20,
-          "marginHorizontal": 4,
-        }
-      }
-    >
-      /
-    </Text>
     <View
       style={
         Object {
-          "width": 70,
+          "flex": 1,
         }
       }
     >
@@ -326,25 +304,10 @@ exports[`AmfDateInput without validation 1`] = `
         }
       />
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      disabled={false}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#9B9B9B",
-          "fontSize": 20,
-          "marginHorizontal": 4,
-        }
-      }
-    >
-      /
-    </Text>
     <View
       style={
         Object {
-          "width": 80,
+          "flex": 1,
         }
       }
     >
