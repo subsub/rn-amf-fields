@@ -17,7 +17,7 @@ class AmfDateInput extends Component {
     }
     let tempMoment = moment(this.props.value)
     if (tempMoment.isValid()) {
-      month = tempMoment.format("MMM")
+      month = tempMoment.format('MMM')
     }
 
     this.state = { valid, errorMessage, year, month, day }
@@ -90,7 +90,7 @@ class AmfDateInput extends Component {
     }
 
     const updateValue = this.updateValue
-    console.log("test", year, month, day)
+    console.log('test', year, month, day)
 
     return (
       <View>
