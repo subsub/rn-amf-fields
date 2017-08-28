@@ -14,10 +14,10 @@ class AmfDateInput extends Component {
 
     if (this.props.value) {
       [year, monthNumStr, day] = this.props.value.split('-')
-    }
-    let tempMoment = moment(this.props.value)
-    if (tempMoment.isValid()) {
-      month = tempMoment.format('MMM')
+      let tempMoment = moment(this.props.value)
+      if (tempMoment.isValid()) {
+        month = tempMoment.format('MMM')
+      }
     }
 
     this.state = { valid, errorMessage, year, month, day }
@@ -30,6 +30,15 @@ class AmfDateInput extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.value !== prevProps.value) {
       this.validate()
+      let year = monthNumStr = month =  day = ''
+      if (this.props.value) {
+        [year, monthNumStr, day] = this.props.value.split('-')
+        let tempMoment = moment(this.props.value)
+        if (tempMoment.isValid()) {
+          month = tempMoment.format('MMM')
+        }
+      }
+      this.setState({year, month, day})
     }
   }
 
@@ -90,7 +99,6 @@ class AmfDateInput extends Component {
     }
 
     const updateValue = this.updateValue
-    console.log('test', year, month, day)
 
     return (
       <View>
