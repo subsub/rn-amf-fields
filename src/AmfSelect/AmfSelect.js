@@ -5,7 +5,10 @@ import { Dropdown } from 'react-native-material-dropdown'
 
 class AmfSelect extends Component {
 
- onChange = (val, index) => this.props.onChange(this.props.options[index].value)
+ onChange = (val, index) => {
+   this.props.onChange(this.props.options[index].value)
+   return typeof this.props.onFinish === 'function' && this.props.onFinish()
+ }
 
  render() {
 
