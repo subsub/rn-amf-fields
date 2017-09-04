@@ -1,6 +1,6 @@
 {
   "name": "rn-amf-fields",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Fields that use in react-native with standared styles",
   "main": "index.js",
   "scripts": {
