@@ -24,15 +24,11 @@ class AmfRadioButton extends Component {
   }
 
   render() {
-    const { label, options, value, onChange, required } = this.props
+    const { label, options, value, onChange, error } = this.props
 
-    let validationStyle = {}
     let validationText
     let selected = options.find(i => i.value === value)
-    if (required && selected === undefined && value !== null) {
-      validationStyle = { borderColor: 'red', borderWidth: 1 }
-      validationText = <Text style={style.errorText}>{label} harus dipilih</Text>
-    }
+    if (error !== '') validationText = <Text style={style.errorText}>{error}</Text>
 
     return (
       <View>
