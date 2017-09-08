@@ -1,3 +1,50 @@
+# Usage
+
+```
+import React, { Component } from "react"
+import { AmfField } from "rn-amf-fields"
+import { View } from "react-native"
+
+const selectOptions = [{
+  label: "Javascript",
+  value: "js"
+}, {
+  label: "Golang",
+  value: "go"
+}]
+
+class MyComponent extends Component {
+  contructor() {
+    super()
+
+    this.state = {
+      name: "Budi",
+      code: "js"
+    }
+  }
+
+  render() {
+    return (
+      <View>
+        <AmfField
+          type="text"
+          label="Name"
+          value={this.state.name}
+          onChange={(val) => this.setState({name: val})}
+        />
+        <AmfField
+          type="select"
+          label="Code"
+          value={this.state.code}
+          onChange={(val) => this.setState({code: val})}
+          options={selectOptions}
+        />
+      </View>
+    )
+  }
+}
+```
+
 # Development
 
 Still dont know what the best of this one
