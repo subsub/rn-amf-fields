@@ -407,6 +407,7 @@ exports[`AmfField should be able to render AmfSelect (should transfer its option
             onChange={[Function]}
             onChangeText={[Function]}
             onContentSizeChange={[Function]}
+            onEndEditing={[Function]}
             onFocus={[Function]}
             renderAccessory={[Function]}
             returnKeyType={undefined}
@@ -1169,6 +1170,7 @@ exports[`AmfField without validation 1`] = `
         onChange={[Function]}
         onChangeText={[Function]}
         onContentSizeChange={[Function]}
+        onEndEditing={[Function]}
         onFocus={[Function]}
         onSubmitEditing={[Function]}
         returnKeyType="next"

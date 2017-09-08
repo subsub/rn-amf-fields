@@ -1,4 +1,16 @@
-# Usage
+[npm-badge]: https://img.shields.io/npm/v/rn-amf-fields.svg?colorB=ff6d00
+[npm-url]: https://npmjs.com/package/rn-amf-fields
+[travis-badge]: https://api.travis-ci.org/amarthaid/rn-amf-fields.svg?branch=master
+[travis-url]: https://travis-ci.org/amarthaid/rn-amf-fields?branch=master
+
+# Amf Fields
+
+[![npm][npm-badge]][npm-url]
+[![travis][travis-badge]][travis-url]
+[![Coverage Status](https://coveralls.io/repos/github/amarthaid/rn-amf-fields/badge.svg)](https://coveralls.io/github/amarthaid/rn-amf-fields)
+
+## Usage
+
 
 ```
 import React, { Component } from "react"
@@ -45,7 +57,7 @@ class MyComponent extends Component {
 }
 ```
 
-# Development
+## Development
 
 Still dont know what the best of this one
 
