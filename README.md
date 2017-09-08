@@ -1,7 +1,11 @@
+[npm-badge]: https://img.shields.io/npm/v/rn-amf-fields.svg?colorB=ff6d00
+[npm-url]: https://npmjs.com/package/rn-amf-fields
+[travis-badge]: https://api.travis-ci.org/amarthaid/rn-amf-fields.svg?branch=master
+[travis-url]: https://travis-ci.org/amarthaid/rn-amf-fields?branch=master
+
 # Amf Fields
 
 [![npm][npm-badge]][npm-url]
-[![license][license-badge]][license-url]
 [![travis][travis-badge]][travis-url]
 
 ## Usage
