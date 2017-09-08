@@ -8,6 +8,8 @@
 [![npm][npm-badge]][npm-url]
 [![travis][travis-badge]][travis-url]
 [![Coverage Status](https://coveralls.io/repos/github/amarthaid/rn-amf-fields/badge.svg)](https://coveralls.io/github/amarthaid/rn-amf-fields)
+[![Known Vulnerabilities](https://snyk.io/test/github/amarthaid/rn-amf-fields/badge.svg)](https://snyk.io/test/github/amarthaid/rn-amf-fields)
+
 
 ## Usage
 
