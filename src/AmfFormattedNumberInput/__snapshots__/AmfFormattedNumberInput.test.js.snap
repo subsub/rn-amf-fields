@@ -68,6 +68,7 @@ exports[`AmfFormattedNumberInput without validation 1`] = `
         onChange={[Function]}
         onChangeText={[Function]}
         onContentSizeChange={[Function]}
+        onEndEditing={[Function]}
         onFocus={[Function]}
         onSubmitEditing={[Function]}
         returnKeyType="next"
