@@ -4,4 +4,4 @@ node_js:
 script:
   - npm test -- --coverage
 after_success:
-  - ./node_modules/bin/coveralls
+  - ./node_modules/.bin/coveralls
