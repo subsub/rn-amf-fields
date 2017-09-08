@@ -1,4 +1,11 @@
-# Usage
+# Amf Fields
+
+[![npm][npm-badge]][npm-url]
+[![license][license-badge]][license-url]
+[![travis][travis-badge]][travis-url]
+
+## Usage
+
 
 ```
 import React, { Component } from "react"
@@ -45,7 +52,7 @@ class MyComponent extends Component {
 }
 ```
 
-# Development
+## Development
 
 Still dont know what the best of this one
 
