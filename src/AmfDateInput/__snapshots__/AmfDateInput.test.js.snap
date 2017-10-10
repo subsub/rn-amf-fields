@@ -614,6 +614,11 @@ exports[`AmfDateInput without validation 1`] = `
               "textColor": undefined,
               "value": "1998",
             },
+            Object {
+              "label": "1999",
+              "textColor": undefined,
+              "value": "1999",
+            },
           ]
         }
         onChange={[Function]}
