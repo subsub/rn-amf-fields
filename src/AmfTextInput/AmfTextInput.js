@@ -30,7 +30,6 @@ export default class AmfTextInput extends Component {
         value={value || ''}
         error={error}
         onSubmitEditing={onSubmitEditing}
-        onBlur={onSubmitEditing}
         ref={assignRef}
       />
     )
