@@ -37,7 +37,7 @@ class AmfRadioButton extends Component {
     return (
       <View>
         <Text style={style.label}>{this.props.label}</Text>
-        <RadioForm formHorizontal={false} >
+        <RadioForm formHorizontal={false} style={{alignItems: 'flex-start'}}>
           { options.map( (option, i) => (
             <RadioButton labelHorizontal={true} key={i} >
               {/*  You can set RadioButtonLabel before RadioButtonInput */}
@@ -60,7 +60,7 @@ class AmfRadioButton extends Component {
                 labelHorizontal={true}
                 onPress={onChange}
                 labelStyle={{}}
-                labelWrapStyle={{}}
+                labelWrapStyle={{flex: 1, flexWrap: 'wrap'}}
               />
             </RadioButton>
           ))}
