@@ -44,7 +44,10 @@ AmfSelect.defaultProps = {
 
 AmfSelect.propTypes = {
   ...fieldPropTypes,
-  value : PropTypes.string,
+  value : PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
   layout: PropTypes.oneOf(['vertical', 'horizontal'])
 }
 
