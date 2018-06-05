@@ -17,12 +17,13 @@ export default class AmfTextInput extends Component {
 
   render() {
 
-    const { label, value, error } = this.props
+    const { label, value, error, disabled } = this.props
 
     const { onChange, onSubmitEditing, assignRef } = this
 
     return (
       <TextField
+        disabled={disabled}
         label={label}
         onChangeText={onChange}
         keyboardType="default"
