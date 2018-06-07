@@ -27,34 +27,33 @@ class AmfCheckBox extends Component {
     const { label, options, value, onChange, error } = this.props
 
     let validationText
-    let selected = options.find(i => i.value === value)
     if (error !== '') validationText = <Text style={style.errorText}>{error}</Text>
 
     return (
       <View>
-        <Text style={style.label}>{this.props.label}</Text>
+        <Text style={style.label}>{label}</Text>
         <CheckboxGroup
-            callback={onChange}
-            iconSize={30}
-            checkedIcon="md-checkbox"
-            uncheckedIcon="md-checkbox-outline"
-            checkboxes={
-                options.map( (option, i) => (
-                    {
-                        label: option.label, // label for checkbox item
-                        value: option.value, // selected value for item, if selected, what value should be sent?
-                        selected: option.value === value
-                    }
-                ))
-            }
-            labelStyle={{
-              color: '#333'
-            }}
-            rowStyle={{
-              flexDirection: 'row'
-            }}
-            rowDirection={"column"}
-            />
+          callback={onChange}
+          iconSize={30}
+          checkedIcon="md-checkbox"
+          uncheckedIcon="md-checkbox-outline"
+          checkboxes={
+            options.map( (option, i) => (
+              {
+                label: option.label,
+                value: option.value,
+                selected: value.indexOf(option.value) > -1
+              }
+            ))
+          }
+          labelStyle={{
+            color: '#333'
+          }}
+          rowStyle={{
+            flexDirection: 'row'
+          }}
+          rowDirection={'column'}
+        />
         { validationText }
       </View>
     )
@@ -73,5 +72,10 @@ const style = StyleSheet.create({
     marginBottom: 8
   }
 })
+
+AmfCheckBox.propTypes = {
+  ...fieldPropTypes,
+  value: PropTypes.array.isRequired,
+}
 
 export default AmfCheckBox

@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AmfCheckBox without options 1`] = `"Field \\"Label\\" (AmfCheckBox) doesnt have options"`;
-
-exports[`AmfRadioButton simple render 1`] = `
+exports[`AmfCheckBox simple render 1`] = `
 <View>
   <Text
     accessible={true}
@@ -167,3 +165,5 @@ exports[`AmfRadioButton simple render 1`] = `
   />
 </View>
 `;
+
+exports[`AmfCheckBox without options 1`] = `"Field \\"Label\\" (AmfCheckBox) doesnt have options"`;
