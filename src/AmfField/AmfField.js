@@ -9,6 +9,7 @@ import AmfDatepicker from '../AmfDatepicker/AmfDatepicker'
 import AmfDateInput from '../AmfDateInput/AmfDateInput'
 import AmfSelect from '../AmfSelect/AmfSelect'
 import AmfSelectNested from '../AmfSelectNested/AmfSelectNested'
+import AmfCheckBox from '../AmfCheckBox/AmfCheckBox'
 import PropTypes from 'prop-types'
 import fieldPropTypes from '../fieldPropTypes'
 
@@ -23,6 +24,7 @@ const switcher = {
   'radio-vertical' : AmfRadioButtonVertical,
   'datepicker': AmfDatepicker,
   'date': AmfDateInput,
+  'checkbox': AmfCheckBox
 }
 
 export default class AmfField extends Component {
