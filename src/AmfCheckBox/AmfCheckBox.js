@@ -23,8 +23,13 @@ class AmfCheckBox extends Component {
     }
   }
 
+  onChange = val => {
+    const arr = val.split(",")
+    this.props.onChange(arr)
+  }
+
   render() {
-    const { label, options, value, onChange, error } = this.props
+    const { label, options, value, error } = this.props
 
     let validationText
     if (error !== '') validationText = <Text style={style.errorText}>{error}</Text>
@@ -33,10 +38,10 @@ class AmfCheckBox extends Component {
       <View>
         <Text style={style.label}>{label}</Text>
         <CheckboxGroup
-          callback={onChange}
+          callback={this.onChange}
           iconSize={30}
           checkedIcon="md-checkbox"
-          uncheckedIcon="md-checkbox-outline"
+          uncheckedIcon="md-square-outline"
           checkboxes={
             options.map( (option, i) => (
               {
@@ -47,10 +52,13 @@ class AmfCheckBox extends Component {
             ))
           }
           labelStyle={{
-            color: '#333'
+            color: '#333',
+            marginLeft: 8
           }}
           rowStyle={{
-            flexDirection: 'row'
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 8
           }}
           rowDirection={'column'}
         />

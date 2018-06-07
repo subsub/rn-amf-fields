@@ -45,7 +45,9 @@ exports[`AmfCheckBox simple render 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "alignItems": "center",
           "flexDirection": "row",
+          "margin": 8,
           "opacity": 1,
         }
       }
@@ -72,7 +74,7 @@ exports[`AmfCheckBox simple render 1`] = `
           ]
         }
       >
-        
+        
       </Text>
       <Text
         accessible={true}
@@ -82,6 +84,7 @@ exports[`AmfCheckBox simple render 1`] = `
         style={
           Object {
             "color": "#333",
+            "marginLeft": 8,
           }
         }
       >
@@ -106,7 +109,9 @@ exports[`AmfCheckBox simple render 1`] = `
       onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "alignItems": "center",
           "flexDirection": "row",
+          "margin": 8,
           "opacity": 1,
         }
       }
@@ -133,7 +138,7 @@ exports[`AmfCheckBox simple render 1`] = `
           ]
         }
       >
-        
+        
       </Text>
       <Text
         accessible={true}
@@ -143,6 +148,7 @@ exports[`AmfCheckBox simple render 1`] = `
         style={
           Object {
             "color": "#333",
+            "marginLeft": 8,
           }
         }
       >
