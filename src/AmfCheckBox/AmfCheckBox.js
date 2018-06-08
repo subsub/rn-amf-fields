@@ -24,8 +24,7 @@ class AmfCheckBox extends Component {
   }
 
   onChange = val => {
-    const arr = val.split(",")
-    this.props.onChange(arr)
+    this.props.onChange(val)
   }
 
   render() {
